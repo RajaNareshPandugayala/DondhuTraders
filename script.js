@@ -167,7 +167,7 @@ moon.addEventListener('click', () => {
     }
 
     for (let i = 0; i < colLg4.length; i++) {
-        colLg4[i].style.backgroundColor = theme === 'light' ? '#001515' : 'white';
+        colLg4[i].style.backgroundColor = theme === 'light' ? '#001515' : '#EDF2F8';
     }
 
     for (let i = 0; i < colMd6_01.length; i++) {

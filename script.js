@@ -132,7 +132,8 @@ const elementorElementCheck = document.getElementsByClassName('elementor-element
 const teamItemAuthorinfo = document.getElementsByClassName('team__item-authorinfo');
 const swiperSlide01 = document.getElementsByClassName('swiper-slide01');
 const swiperSlide = document.getElementsByClassName('swiper-slide');
-const accordionButtonParent = document.getElementsByClassName('accordion__button_parent ');
+const accordionButtonParent = document.getElementsByClassName('accordion__button_parent');
+const tgTab00 = document.getElementsByClassName('tg-tab-00');
 
 
 
@@ -210,6 +211,11 @@ moon.addEventListener('click', () => {
     for (let i = 0; i < accordionButtonParent.length; i++) {
         accordionButtonParent[i].style.color = theme === 'light' ? 'white' : 'black';
     }
+
+    for (let i = 0; i < tgTab00.length; i++) {
+        tgTab00[i].style.backgroundColor = theme === 'light' ? '#001515' : 'whitesmoke';
+    }
+
 
 });
 

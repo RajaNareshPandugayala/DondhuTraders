@@ -1,277 +1,89 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        /* Define the button styles */
-        .glass-button {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 16px;
-            text-align: center;
-            text-decoration: none;
-            color: #fff;
-            position: relative;
-            overflow: hidden;
-            background: linear-gradient(90deg, #00a8ff, #6a89cc);
-            border: none;
-            cursor: pointer;
-            transition: background 0.3s ease;
-        }
-
-        /* Create the glass effect */
-        .glass-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: inherit;
-            z-index: -1;
-            filter: blur(20px);
-        }
-
-        /* Add animation on hover */
-        .glass-button:hover {
-            background: linear-gradient(90deg, #e74c3c, #f39c12);
-            animation: moveGradient 1s linear infinite;
-        }
-
-        /* Define the keyframe animation */
-        @keyframes moveGradient {
-            0% {
-                background-position: 100% 0%;
-            }
-
-            100% {
-                background-position: 0% 0%;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <a href="#" class="glass-button">Hover Me</a>
-
-</body>
-
-</html>-->
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @keyframes moveLeftToRight {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(calc(100% - 100vw));
-            }
-        }
-
-        @keyframes moveRightToLeft {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(calc(-100% + 100vw));
-            }
-        }
-
-        .moving-image {
-            width: 100px;
-            /* Adjust the width of your image */
-            height: 100px;
-            /* Adjust the height of your image */
-            background-color: lightblue;
-            /* Adjust the background color of your image */
-            position: relative;
-            animation: moveLeftToRight 5s linear infinite alternate;
-            /* Adjust the duration and timing function as needed */
-        }
-
-        .moving-image.reverse {
-            animation-name: moveRightToLeft;
-        }
-    </style>
-</head>
-
-<body>
-<div class="moving-image"></div>
-    <div class="moving-image reverse"></div>
-</body>
-
-</html> -->
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Scroll Animation</title>
 
     <style>
-        .partner__slider {
-            display: flex;
-            /* flex-wrap: wrap; */
-            align-items: center;
-            justify-content: center;
-            background-color: rgb(212, 254, 240);
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
         }
 
-        .swiper-wrapper {
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            height: 100vh;
             display: flex;
-            /* flex-wrap: wrap; */
             align-items: center;
             justify-content: center;
-            /* border: 2px solid red; */
-            /* gap: 75px; */
-            margin: 30px;
-            padding: 10px;
-            background-color: white;
-            border-radius: 1cm;
+        }
+
+        .hidden-image {
+            opacity: 0;
+            transition: opacity 0.5s, transform 0.5s;
         }
 
 
-        /* Add these styles to your existing CSS */
-
-        .swiper-slide {
-            width: auto;
+        .hidden-image-left {
             transform: translateX(-100%);
 
-            /* Make sure each slide takes the width of its content */
         }
 
-        @keyframes moveRightToLeft {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                /* Assuming each slide has the same width */
-            }
+        .hidden-image-right {
+            transform: translateX(100%);
         }
 
-        .swiper-wrapper {
-            animation: moveRightToLeft 15s linear infinite;
-            /* Adjust the duration as needed */
+        .visible-image {
+            opacity: 1;
+            transform: translateX(0);
         }
     </style>
-
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-    <!-- Include Swiper JS -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
-
-    User
-    <div class="elementor-element elementor-element-ee44b74 e-con-full e-flex e-con e-parent">
-        <div class="elementor-element elementor-element-5433ca4 elementor-widget elementor-widget-brand">
-            <div class="elementor-widget-container">
-                <div class="partner partner--gradient tg-section">
-                    <div class="container">
-                        <div class="partner__wrapper">
-                            <div class="partner__slider swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide ">
-                                        <div class="partner__item">
-                                            <div class="partner__item-inner">
-                                                <a href="#">
-                                                    <img decoding="async" src="barnd01.png" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="partner__item">
-                                            <div class="partner__item-inner">
-                                                <a href="#">
-                                                    <img decoding="async" src="barnd02.png" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="partner__item">
-                                            <div class="partner__item-inner">
-                                                <a href="#">
-                                                    <img decoding="async" src="barnd03.png" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="partner__item">
-                                            <div class="partner__item-inner">
-                                                <a href="#">
-                                                    <img decoding="async" src="barnd04.png" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="partner__item">
-                                            <div class="partner__item-inner">
-                                                <a href="#">
-                                                    <img decoding="async" src="barnd05.png" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="partner__item">
-                                            <div class="partner__item-inner">
-                                                <a href="#">
-                                                    <img decoding="async" src="barnd06.png" alt="">
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="image-container">
+        <img src="DonthuTradersLogo-no-background.png" alt="Image 1" class="hidden-image hidden-image-left" id="image1"
+            width="100px">
+        <img src="DonthuTradersLogo.png" alt="Image 2" class="hidden-image hidden-image-right" id="image2"
+            width="100px">
     </div>
 
-    <!-- <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var mySwiper = new Swiper('.swiper-container', {
-                loop: true, // Enable infinite loop
-                slidesPerView: 'auto',
-                spaceBetween: 75, // Adjust this value as needed
-                speed: 1000, // Adjust the speed of the animation
-            });
-        });
-    </script> -->
-
-
-
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const imageContainer = document.querySelector('.image-container');
+        const images = document.querySelectorAll('.hidden-image');
+
+        function checkVisibility() {
+            images.forEach(image => {
+                const rect = image.getBoundingClientRect();
+
+                // rect.bottom <= window.innerHeight; // it is for top to bottom (image can move)
+                // rect.top >= 0; // it is for bottom to top (image can move)
+                // rect.bottom <= window.innerHeight && rect.top >= 0; if we use both it works top to bottom and bottom to top (image can move)
+                const isVisible = rect.bottom <= window.innerHeight// && rect.top >= 0;
+
+                if (isVisible) {
+                    image.classList.add('visible-image');
+                } else {
+                    image.classList.remove('visible-image');
+                }
+            });
+        }
+
+        // Initial check on page load
+        checkVisibility();
+
+        // Check visibility on scroll
+        window.addEventListener('scroll', checkVisibility);
+    });
+
+</script>
 
 </html>

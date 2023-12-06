@@ -1889,6 +1889,19 @@ form {
         gap: 80px;
     }
 
+    .box01_right {
+        width: 100%;
+    }
+
+    .box01_right img {
+        width: 100%;
+    }
+
+    .box01_boxs-content {
+        justify-content: center;
+        width: 100%;
+    }
+
     .box04_boxs-content {
         justify-content: center;
     }
@@ -2019,7 +2032,7 @@ form {
     .box03_right_image_bottom_content {
         position: relative;
         top: -320px;
-        left: 80px;
+        left: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -2072,6 +2085,7 @@ form {
     }
 
 
+
     .box10_boxs-content {
         align-items: center;
         justify-content: center;
@@ -2082,5 +2096,21 @@ form {
         height: 250px;
     }
 
+
+    .box04_heading,
+    .box05_heading,
+    .box06_heading,
+    .box07_heading,
+    .box08_heading {
+        width: 100%;
+    }
+
+    .box05_down_box {
+        padding: 5px;
+    }
+
+    .box06_down_box {
+        padding: 5px;
+    }
 
 }

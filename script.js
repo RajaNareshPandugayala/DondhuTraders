@@ -121,19 +121,20 @@ const header = document.getElementsByClassName('sticky');
 const moon = document.getElementById('btnSwitch');
 const icon = moon.querySelector('img');
 const anchorTag = document.querySelectorAll('a');
-const serviceThumbInner = document.getElementsByClassName('service__thumb-inner');
-const colLg4 = document.getElementsByClassName('col-lg-4');
-const colMd6_01 = document.getElementsByClassName('col-md-6_01');
+const box04DownImageCircle = document.getElementsByClassName('box04_down_image-circle');
+const box04DownBox = document.getElementsByClassName('box04_down_box ');
+const box05DownBox = document.getElementsByClassName('box05_down_box');
 const floatingContentTopLeft = document.getElementsByClassName('floating-content__top-left');
 const floatingContentBottomRight = document.getElementsByClassName('floating-content__bottom-right');
 const floatingContentItemStyle2 = document.getElementsByClassName('floating-content__item--style2');
 const floatingContentItemStyle3 = document.getElementsByClassName('floating-content__item--style3');
-const elementorElementCheck = document.getElementsByClassName('elementor-element_check');
-const teamItemAuthorinfo = document.getElementsByClassName('team__item-authorinfo');
-const swiperSlide01 = document.getElementsByClassName('swiper-slide01');
-const swiperSlide = document.getElementsByClassName('swiper-slide');
-const accordionButtonParent = document.getElementsByClassName('accordion__button_parent');
-const tgTab00 = document.getElementsByClassName('tg-tab-00');
+const box06DownBox = document.getElementsByClassName('box06_down_box');
+const box10LeftContentButton = document.getElementsByClassName('box10_left_content-button');
+const box08DownBox = document.getElementsByClassName('box08_down_box');
+const box09DownBox = document.getElementsByClassName('box09_down_box');
+const box07DownBoxStretchedLink = document.getElementsByClassName('box07_down_box-stretched_link');
+const box03LeftListH6 = document.getElementsByClassName('box03_left_list_h6');
+const box07DownBoxATag = document.getElementsByClassName('box07_down_box_a-tag');
 
 
 
@@ -147,7 +148,7 @@ moon.addEventListener('click', () => {
 
     icon.src = theme === 'light' ? 'sun.svg' : 'moon.svg';
     moon.style.backgroundColor = theme === 'light' ? 'white' : '#00D094';
-    body.style.backgroundColor = theme === 'light' ? 'black' : 'white';
+    body.style.backgroundColor = theme === 'light' ? 'black' : 'whitesmoke';
     body.style.color = theme === 'light' ? 'white' : 'black';
 
 
@@ -162,16 +163,16 @@ moon.addEventListener('click', () => {
         anchorTag[i].style.color = theme === 'light' ? 'white' : 'black';
     }
 
-    for (let i = 0; i < serviceThumbInner.length; i++) {
-        serviceThumbInner[i].style.backgroundColor = theme === 'light' ? '#0b1c18' : 'white';
+    for (let i = 0; i < box04DownImageCircle.length; i++) {
+        box04DownImageCircle[i].style.backgroundColor = theme === 'light' ? '#0b1c18' : 'white';
     }
 
-    for (let i = 0; i < colLg4.length; i++) {
-        colLg4[i].style.backgroundColor = theme === 'light' ? '#001515' : '#EDF2F8';
+    for (let i = 0; i < box04DownBox.length; i++) {
+        box04DownBox[i].style.backgroundColor = theme === 'light' ? '#001515' : '#EDF2F8';
     }
 
-    for (let i = 0; i < colMd6_01.length; i++) {
-        colMd6_01[i].style.backgroundColor = theme === 'light' ? '#001515' : 'white';
+    for (let i = 0; i < box05DownBox.length; i++) {
+        box05DownBox[i].style.backgroundColor = theme === 'light' ? '#001515' : '#EDF2F8';
     }
 
 
@@ -192,30 +193,33 @@ moon.addEventListener('click', () => {
         floatingContentItemStyle3[i].style.backgroundColor = theme === 'light' ? '#001515' : 'white';
     }
 
-    for (let i = 0; i < elementorElementCheck.length; i++) {
-        elementorElementCheck[i].style.backgroundColor = theme === 'light' ? '#001515' : 'white';
+    for (let i = 0; i < box06DownBox.length; i++) {
+        box06DownBox[i].style.backgroundColor = theme === 'light' ? '#001515' : 'white';
     }
 
-    for (let i = 0; i < teamItemAuthorinfo.length; i++) {
-        teamItemAuthorinfo[i].style.backgroundColor = theme === 'light' ? '#001515' : 'whitesmoke';
+    for (let i = 0; i < box10LeftContentButton.length; i++) {
+        box10LeftContentButton[i].style.color = theme === 'light' ? 'white' : 'black';
     }
 
-    for (let i = 0; i < swiperSlide01.length; i++) {
-        swiperSlide01[i].style.backgroundColor = theme === 'light' ? '#001515' : 'white';
+    for (let i = 0; i < box08DownBox.length; i++) {
+        box08DownBox[i].style.backgroundColor = theme === 'light' ? '#001515' : 'white';
     }
 
-    for (let i = 0; i < swiperSlide.length; i++) {
-        swiperSlide[i].style.backgroundColor = theme === 'light' ? '#001515' : 'white';
+    for (let i = 0; i < box09DownBox.length; i++) {
+        box09DownBox[i].style.backgroundColor = theme === 'light' ? '#001515' : 'white';
     }
 
-    for (let i = 0; i < accordionButtonParent.length; i++) {
-        accordionButtonParent[i].style.color = theme === 'light' ? 'white' : 'black';
+    for (let i = 0; i < box07DownBoxStretchedLink.length; i++) {
+        box07DownBoxStretchedLink[i].style.color = theme === 'light' ? 'white' : 'black';
     }
 
-    for (let i = 0; i < tgTab00.length; i++) {
-        tgTab00[i].style.backgroundColor = theme === 'light' ? '#001515' : 'whitesmoke';
+    for (let i = 0; i < box03LeftListH6.length; i++) {
+        box03LeftListH6[i].style.backgroundColor = theme === 'light' ? '#001515' : 'whitesmoke';
     }
 
+    for (let i = 0; i < box07DownBoxATag.length; i++) {
+        box07DownBoxATag[i].style.backgroundColor = theme === 'light' ? '#001515' : 'whitesmoke';
+    }
 
 });
 
@@ -232,33 +236,33 @@ moon.addEventListener('click', () => {
 
 
 // Get references to the buttons and the plus/message elements
-const accordionHeader01 = document.querySelector('.accordion__header01');
-const accordionHeader02 = document.querySelector('.accordion__header02');
-const accordionHeader03 = document.querySelector('.accordion__header03');
-const accordionHeader04 = document.querySelector('.accordion__header04');
-const accordionHeader05 = document.querySelector('.accordion__header05');
-const accordionHeader06 = document.querySelector('.accordion__header06');
+const accordionHeader01 = document.querySelector('.box10_left_content-header01');
+const accordionHeader02 = document.querySelector('.box10_left_content-header02');
+const accordionHeader03 = document.querySelector('.box10_left_content-header03');
+const accordionHeader04 = document.querySelector('.box10_left_content-header04');
+const accordionHeader05 = document.querySelector('.box10_left_content-header05');
+const accordionHeader06 = document.querySelector('.box10_left_content-header06');
 
-const accordionButtonShow01 = document.querySelector('.accordion__button-show01');
-const accordionButtonShow02 = document.querySelector('.accordion__button-show02');
-const accordionButtonShow03 = document.querySelector('.accordion__button-show03');
-const accordionButtonShow04 = document.querySelector('.accordion__button-show04');
-const accordionButtonShow05 = document.querySelector('.accordion__button-show05');
-const accordionButtonShow06 = document.querySelector('.accordion__button-show06');
+const accordionButtonShow01 = document.querySelector('.box10_left_content-button-show01');
+const accordionButtonShow02 = document.querySelector('.box10_left_content-button-show02');
+const accordionButtonShow03 = document.querySelector('.box10_left_content-button-show03');
+const accordionButtonShow04 = document.querySelector('.box10_left_content-button-show04');
+const accordionButtonShow05 = document.querySelector('.box10_left_content-button-show05');
+const accordionButtonShow06 = document.querySelector('.box10_left_content-button-show06');
 
-const accordionButtonHide01 = document.querySelector('.accordion__button-hide01');
-const accordionButtonHide02 = document.querySelector('.accordion__button-hide02');
-const accordionButtonHide03 = document.querySelector('.accordion__button-hide03');
-const accordionButtonHide04 = document.querySelector('.accordion__button-hide04');
-const accordionButtonHide05 = document.querySelector('.accordion__button-hide05');
-const accordionButtonHide06 = document.querySelector('.accordion__button-hide06');
+const accordionButtonHide01 = document.querySelector('.box10_left_content-button-hide01');
+const accordionButtonHide02 = document.querySelector('.box10_left_content-button-hide02');
+const accordionButtonHide03 = document.querySelector('.box10_left_content-button-hide03');
+const accordionButtonHide04 = document.querySelector('.box10_left_content-button-hide04');
+const accordionButtonHide05 = document.querySelector('.box10_left_content-button-hide05');
+const accordionButtonHide06 = document.querySelector('.box10_left_content-button-hide06');
 
-const accordionCollapse01 = document.querySelector('.accordion-collapse01');
-const accordionCollapse02 = document.querySelector('.accordion-collapse02');
-const accordionCollapse03 = document.querySelector('.accordion-collapse03');
-const accordionCollapse04 = document.querySelector('.accordion-collapse04');
-const accordionCollapse05 = document.querySelector('.accordion-collapse05');
-const accordionCollapse06 = document.querySelector('.accordion-collapse06');
+const accordionCollapse01 = document.querySelector('.box10_left_content-collapse01');
+const accordionCollapse02 = document.querySelector('.box10_left_content-collapse02');
+const accordionCollapse03 = document.querySelector('.box10_left_content-collapse03');
+const accordionCollapse04 = document.querySelector('.box10_left_content-collapse04');
+const accordionCollapse05 = document.querySelector('.box10_left_content-collapse05');
+const accordionCollapse06 = document.querySelector('.box10_left_content-collapse06');
 
 
 

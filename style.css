@@ -1488,6 +1488,7 @@ form {
         align-items: center;
         justify-content: center;
         /* border: 2px solid green; */
+        padding: 10px 50px;
     }
 
     .box03 {

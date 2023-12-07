@@ -12,6 +12,7 @@ body {
     /* overflow-x: hidden; */
     /* overflow-y: hidden; */
     background-color: whitesmoke;
+    margin-top: 80px;
 }
 
 .hidden {
@@ -167,7 +168,9 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     position: fixed;
+    width: auto;
     left: 30px;
     bottom: 30px;
     background-color: #00D094;
@@ -200,7 +203,10 @@ p {
 }
 
 .header-wrapper {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -655,6 +661,10 @@ p {
 /***********************************box04_Css-End**********************************/
 /***********************************shape01_Image_Css-Start**********************************/
 .wp-image-238 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 106px;
     position: relative;
     left: 200px;
@@ -1404,9 +1414,10 @@ form {
         display: none;
     }
 
-    /* body {
-            overflow-x: hidden;
-        } */
+    body {
+        /* overflow-x: hidden; */
+        margin-top: 0px;
+    }
 
     .header-wrapper {
         position: relative;
@@ -1468,6 +1479,7 @@ form {
     .header_main-menu_ul01 {
         position: absolute;
         top: 85px;
+        right: 10px;
         background-color: #ffff;
     }
 
@@ -1604,9 +1616,10 @@ form {
         display: none;
     }
 
-    /* body {
-        overflow-x: hidden;
-    } */
+    body {
+        /* overflow-x: hidden; */
+        margin-top: 0px;
+    }
 
     .header-wrapper {
         display: flex;
@@ -1667,6 +1680,7 @@ form {
     .header_main-menu_ul01 {
         position: absolute;
         top: 85px;
+        right: 10px;
         background-color: #ffff;
     }
 
@@ -1809,9 +1823,10 @@ form {
         border: 2px solid red;
     } */
 
-    /* body {
-            overflow-x: hidden;
-        } */
+    body {
+        /* overflow-x: hidden; */
+        margin-top: 0px;
+    }
 
 
     .header-wrapper {
@@ -1874,6 +1889,7 @@ form {
     .header_main-menu_ul01 {
         position: absolute;
         top: 85px;
+        right: 10px;
         background-color: #ffff;
     }
 
@@ -2128,9 +2144,10 @@ form {
         border: 2px solid red;
     } */
 
-    /* body {
-            overflow-x: hidden;
-        } */
+    body {
+        /* overflow-x: hidden; */
+        margin-top: 0px;
+    }
 
 
     .header-wrapper {
@@ -2193,6 +2210,7 @@ form {
     .header_main-menu_ul01 {
         position: absolute;
         top: 85px;
+        right: 10px;
         background-color: #ffff;
     }
 
@@ -2442,13 +2460,15 @@ form {
         display: none;
     }
 
-    /* * {
+    /*
+    * {
         border: 2px solid red;
     } */
 
-    /* body {
-            overflow-x: hidden;
-        } */
+    body {
+        /* overflow-x: hidden; */
+        margin-top: 0px;
+    }
 
 
     .header-wrapper {
@@ -2458,6 +2478,7 @@ form {
         align-items: center;
         width: 100%;
         padding: 10px 10px;
+        margin: 0;
         /* border: 2px solid red; */
     }
 
@@ -2511,6 +2532,7 @@ form {
     .header_main-menu_ul01 {
         position: absolute;
         top: 85px;
+        right: 10px;
         background-color: #ffff;
     }
 
@@ -2520,6 +2542,7 @@ form {
         justify-content: center;
         /* border: 2px solid green; */
         padding: 10px 10px;
+        margin: 0;
     }
 
     .box03 {
@@ -2762,6 +2785,7 @@ form {
         color: antiquewhite;
         padding: 5px;
         height: auto;
+        margin: 0;
     }
 
     .box09_down_box {

@@ -135,6 +135,8 @@ const box09DownBox = document.getElementsByClassName('box09_down_box');
 const box07DownBoxStretchedLink = document.getElementsByClassName('box07_down_box-stretched_link');
 const box03LeftListH6 = document.getElementsByClassName('box03_left_list_h6');
 const box07DownBoxATag = document.getElementsByClassName('box07_down_box_a-tag');
+const headerMainMenuUlLi01A = document.querySelectorAll('.header_main-menu_ul-li01-a');
+
 
 
 
@@ -219,6 +221,10 @@ moon.addEventListener('click', () => {
 
     for (let i = 0; i < box07DownBoxATag.length; i++) {
         box07DownBoxATag[i].style.backgroundColor = theme === 'light' ? '#001515' : 'whitesmoke';
+    }
+
+    for (let i = 0; i < headerMainMenuUlLi01A.length; i++) {
+        headerMainMenuUlLi01A[i].style.color = theme === 'light' ? 'black' : 'black';
     }
 
 });

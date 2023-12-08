@@ -377,12 +377,21 @@ p {
     /* border: 2px solid #0A4FD5; */
 }
 
+.box_boxs-content {
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: red solid 1px; */
+    gap: 50px;
+}
+
 /***********************************Common_box-End**********************************/
 
 /***********************************box01_Css-Start**********************************/
 .box01 {
     justify-content: center;
-    gap: 50px;
+    margin-top: 120px;
 }
 
 .box01_left {
@@ -392,7 +401,6 @@ p {
     /* align-items: center; */
     gap: 30px;
     /* border: 2px solid #0A4FD5; */
-    width: 50%;
 }
 
 .box01_left_a-tag {
@@ -522,7 +530,6 @@ p {
     flex-direction: column;
     gap: 50px;
     /* border: 2px solid red; */
-    width: 50%;
 }
 
 
@@ -648,13 +655,8 @@ p {
 }
 
 .box04_boxs-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* border: 2px solid red; */
     gap: 30px;
     flex-wrap: wrap;
-    width: 100%;
 }
 
 .box04_down_box {
@@ -743,13 +745,8 @@ p {
 }
 
 .box05_boxs-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 30px;
     flex-wrap: wrap;
-    /* border: 2px solid red; */
-    width: 100%;
 }
 
 .box05_down_box {
@@ -817,12 +814,8 @@ p {
 }
 
 .box06_boxs-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 30px;
     flex-wrap: wrap;
-    /* border: 2px solid red; */
-    width: 100%;
 }
 
 .box06_boxs-content li {
@@ -921,13 +914,8 @@ p {
 }
 
 .box07_boxs-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     flex-wrap: wrap;
-    /* border: 2px solid red; */
-    width: 100%;
     gap: 50px;
 }
 
@@ -1013,17 +1001,13 @@ p {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 100%;
+    width: 1100px;
     /* border: 2px solid red; */
 }
 
 .box08_boxs-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 20px;
     flex-wrap: wrap;
-    width: 100%;
-    /* border: 2px solid green; */
 }
 
 .box08_down_box {
@@ -1106,18 +1090,14 @@ p {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 100%;
+    width: 1100px;
     /* border: 2px solid red; */
 }
 
 .box09_boxs-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    /* border: 2px solid green; */
-    line-height: 20px;
     gap: 20px;
+    flex-wrap: wrap;
+    line-height: 20px;
 }
 
 
@@ -1182,11 +1162,8 @@ p {
 }
 
 .box10_boxs-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* border: 2px solid #00D094; */
-    width: 100%;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .box10_left {
@@ -1358,6 +1335,7 @@ form {
 .line {
     margin: 0px;
     border: 1px solid gray;
+    width: 100%;
 }
 
 #colophon li {
@@ -1463,6 +1441,7 @@ form {
     justify-content: space-between;
     align-items: center;
     /* border: 2px solid blue; */
+    width: 100%;
 }
 
 .list-wrap01 {
@@ -1490,6 +1469,14 @@ form {
 
 
 @media screen and (max-width: 1100px) {
+    .box_boxs-content {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header_boxs-content {
+        flex-direction: row;
+    }
 
     .box05 {
         display: none;
@@ -1703,6 +1690,15 @@ form {
 
 @media screen and (max-width: 799px) {
 
+    .box_boxs-content {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header_boxs-content {
+        flex-direction: row;
+    }
+
     .box05 {
         display: none;
     }
@@ -1914,6 +1910,15 @@ form {
 
 
 @media screen and (max-width: 599px) {
+
+    .box_boxs-content {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header_boxs-content {
+        flex-direction: row;
+    }
 
     .box05 {
         display: none;
@@ -2246,6 +2251,15 @@ form {
 
 
 @media screen and (max-width: 499px) {
+
+    .box_boxs-content {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header_boxs-content {
+        flex-direction: row;
+    }
 
     .box05 {
         display: none;
@@ -2621,6 +2635,15 @@ form {
 
 
 @media screen and (max-width: 379px) {
+
+    .box_boxs-content {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .header_boxs-content {
+        flex-direction: row;
+    }
 
     .box05 {
         display: none;

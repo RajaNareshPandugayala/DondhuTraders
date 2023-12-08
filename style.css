@@ -1938,6 +1938,10 @@ form {
         width: 100%;
     }
 
+    .wp-image-238 {
+        display: none;
+    }
+
 }
 
 
@@ -2292,6 +2296,10 @@ form {
 
     .box09_down_box {
         width: 100%;
+    }
+
+    .wp-image-238 {
+        display: none;
     }
 
 }
@@ -2693,6 +2701,10 @@ form {
     .box10_left_content-header,
     .box10_left_content-collapse p {
         width: 100%;
+    }
+
+    .wp-image-238 {
+        display: none;
     }
 }
 
@@ -3224,6 +3236,10 @@ form {
     .mc4wp-form,
     .form-control {
         width: 100%;
+    }
+
+    .wp-image-238 {
+        display: none;
     }
 
 }

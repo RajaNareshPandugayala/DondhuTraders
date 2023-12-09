@@ -7,6 +7,34 @@ window.addEventListener("load", function () {
 });
 
 
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Get references to the elements
+    var menuButton = document.getElementById("menubtn");
+    var closeButton = document.getElementById("closebtn");
+    var menuList = document.querySelector(".header_main-menu_ul01");
+    menuList.style.display = "none";
+
+    // Event listener for the menu button
+    menuButton.addEventListener("click", function () {
+        // Show the menu and hide the menu button
+        menuList.style.display = "block";
+        menuButton.style.display = "none";
+        closeButton.style.display = "inline-block"; // Show close button
+    });
+
+    // Event listener for the close button
+    closeButton.addEventListener("click", function () {
+        // Hide the menu and show the menu button
+        menuList.style.display = "none";
+        menuButton.style.display = "inline-block"; // Show menu button
+        closeButton.style.display = "none";
+    });
+});
+
+
+
 /************************animation*********************************/
 
 
@@ -136,6 +164,7 @@ const box07DownBoxStretchedLink = document.getElementsByClassName('box07_down_bo
 const box03LeftListH6 = document.getElementsByClassName('box03_left_list_h6');
 const box07DownBoxATag = document.getElementsByClassName('box07_down_box_a-tag');
 const headerMainMenuUlLi01A = document.querySelectorAll('.header_main-menu_ul-li01-a');
+const box05Middle = document.querySelectorAll('.box05_middle');
 
 
 
@@ -227,8 +256,11 @@ moon.addEventListener('click', () => {
         headerMainMenuUlLi01A[i].style.color = theme === 'light' ? 'black' : 'black';
     }
 
-});
+    for (let i = 0; i < box05Middle.length; i++) {
+        box05Middle[i].style.backgroundColor = theme === 'light' ? '#001515' : '#EDF2F8';
+    }
 
+});
 
 
 

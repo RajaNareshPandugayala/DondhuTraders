@@ -25,66 +25,63 @@
         <span class="light_dark-switch" id="btnSwitch">
             <img src="moon.svg" alt="light-dark-switchbtn">
         </span>
-        <header id="sticky-header">
-            <div class="header-wrapper sticky">
-                <div class="box_boxs-content header_boxs-content">
-                    <a class="header_logo" href="#">
-                        <div class="header_logotext"><img src="DonthuTradersLogo-logo.png" alt="Logo" />
-                            <div>
-                                <div class="header_logotext_donthu">Donthu Traders</div>
-                                <div class="header_logotext_trade24x7">Trade24X7</div>
-                            </div>
+        <header id="sticky-header" class="box">
+            <div class="box_boxs-content header_boxs-content">
+                <a class="header_logo" href="#">
+                    <div class="header_logotext"><img src="DonthuTradersLogo-logo.png" alt="Logo" />
+                        <div class="header_logotext_content">
+                            <div class="header_logotext_donthu">Donthu Traders</div>
+                            <div class="header_logotext_trade24x7">Trade24X7</div>
                         </div>
-
-                    </a>
-                    <div class="header_menu_div">
-                        <ul id="header_menu-main-menu" class="header_main-menu_ul">
-                            <li class="header_main-menu_ul-li">
-                                <a href="#">Home</a>
+                    </div>
+                </a>
+                <div class="header_menu_div">
+                    <ul id="header_menu-main-menu" class="header_main-menu_ul">
+                        <li class="header_main-menu_ul-li">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="header_main-menu_ul-li">
+                            <a href="#">Services <i class="fas fa-angle-down"></i></a>
+                            <ul class="header_sub-menu_ul" role="menu">
+                                <li> <a href="#">Our Services</a></li>
+                                <li> <a href="#">Services
+                                        Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="header_main-menu_ul-li">
+                            <a href="#">AboutUs</a>
+                        </li>
+                        <li class="header_main-menu_ul-li">
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header_menu-bar_parent">
+                    <div class="box_button header-button">
+                        <a href="#">Get Started</a>
+                    </div>
+                    <!-- toggle icons -->
+                    <div class="header_menu-bar hidden"><img src="menu.png" alt="" id="menubtn"><span class="close_btn"
+                            style="display: none;" id="closebtn">X</span>
+                        <ul id="header_menu-main-menu" class="header_main-menu_ul01">
+                            <li class="header_main-menu_ul-li01">
+                                <a href="#" class="header_main-menu_ul-li01-a">Home</a>
                             </li>
-                            <li class="header_main-menu_ul-li">
-                                <a href="#">Services <i class="fas fa-angle-down"></i></a>
+                            <li class="header_main-menu_ul-li01">
+                                <a href="#" class="header_main-menu_ul-li01-a">Services</a>
                                 <ul class="header_sub-menu_ul" role="menu">
                                     <li> <a href="#">Our Services</a></li>
                                     <li> <a href="#">Services
                                             Details</a></li>
                                 </ul>
                             </li>
-                            <li class="header_main-menu_ul-li">
-                                <a href="#">AboutUs</a>
+                            <li class="header_main-menu_ul-li01">
+                                <a href="#" class="header_main-menu_ul-li01-a">AboutUs</a>
                             </li>
-                            <li class="header_main-menu_ul-li">
-                                <a href="#">Contact Us</a>
+                            <li class="header_main-menu_ul-li01">
+                                <a href="#" class="header_main-menu_ul-li01-a">Contact Us</a>
                             </li>
                         </ul>
-                    </div>
-                    <div class="header_menu-bar_parent">
-                        <div class="box_button header-button">
-                            <a href="#">Get Started</a>
-                        </div>
-                        <!-- toggle icons -->
-                        <div class="header_menu-bar hidden"><img src="menu.png" alt="" id="menubtn"><span
-                                class="close_btn" style="display: none;" id="closebtn">X</span>
-                            <ul id="header_menu-main-menu" class="header_main-menu_ul01">
-                                <li class="header_main-menu_ul-li01">
-                                    <a href="#" class="header_main-menu_ul-li01-a">Home</a>
-                                </li>
-                                <li class="header_main-menu_ul-li01">
-                                    <a href="#" class="header_main-menu_ul-li01-a">Services</a>
-                                    <ul class="header_sub-menu_ul" role="menu">
-                                        <li> <a href="#">Our Services</a></li>
-                                        <li> <a href="#">Services
-                                                Details</a></li>
-                                    </ul>
-                                </li>
-                                <li class="header_main-menu_ul-li01">
-                                    <a href="#" class="header_main-menu_ul-li01-a">AboutUs</a>
-                                </li>
-                                <li class="header_main-menu_ul-li01">
-                                    <a href="#" class="header_main-menu_ul-li01-a">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -93,8 +90,8 @@
         <div class="box box01">
             <div class="box_boxs-content box01_boxs-content">
                 <div class="box01_left">
-                    <div class="box01_left_image">
-                        <img src="banner_coin.png" alt="Coin icon" class="box01_left_image-coin hidden">
+                    <div class="box01_left_image hidden">
+                        <img src="banner_coin.png" alt="Coin icon" class="box01_left_image-coin">
                     </div>
                     <h1 class="box_heading box01_left_heading">
                         Invest Your Money With <span>Higher Return</span>
@@ -127,11 +124,13 @@
                     </div>
                 </div>
                 <div class="box01_right">
-                    <img src="banner_img.png" alt="banner_image">
+                    <img src="banner_img_copy.png" alt="banner_image">
                 </div>
             </div>
         </div>
-        <img src="shape01.png" class="wp-image-238" />
+        <div class="wp-image-238_div">
+            <img src="shape01.png" class="wp-image-238" />
+        </div>
         <div class="box box02">
             <div class="box_boxs-content box02_boxs-content">
                 <div class="box02_left hidden-image-left">
@@ -162,7 +161,9 @@
                 </div>
             </div>
         </div>
-        <img src="shape01.png" class="wp-image-238" />
+        <div class="wp-image-238_div">
+            <img src="shape01.png" class="wp-image-238" />
+        </div>
         <div class="box box03">
             <div class="box_boxs-content box03_boxs-content">
                 <div class="box03_left hidden-image-left">
@@ -183,59 +184,25 @@
                     </div>
                 </div>
                 <div class="box03_right hidden-image-right">
-                    <div class="box03_right_image box03_right_image01">
-                        <img src="features01.png" alt="Feature image">
+                    <div class="box03_right_image">
                         <div class="box03_right_image_top_content">
                             <img src="percent01.png" width="80" alt="Feature image">
                             <p>Interest Rate For Loan
                             </p>
                         </div>
+                        <img src="features01_copy.png" alt="Feature image" class="box03_right_image-center">
                         <div class="box03_right_image_bottom_content hidden-image-right-slow">
                             <h3>10M</h3>
-                            <p>Available for loan</p>
-                        </div>
-                    </div>
-                    <div class="box03_right_image box03_right_image02" style="display: none;">
-                        <img src="features02.png" alt="Feature image">
-                        <div class="box03_right_image_top_content">
-                            <img src="percent02.png" width="80" alt="Feature image">
-                            <p>Interest Rate For Loan
-                            </p>
-                        </div>
-                        <div class="box03_right_image_bottom_content hidden-image-right-slow">
-                            <h3>18M</h3>
-                            <p>Available for loan</p>
-                        </div>
-                    </div>
-                    <div class="box03_right_image box03_right_image03" style="display: none;">
-                        <img src="features01.png" alt="Feature image">
-                        <div class="box03_right_image_top_content">
-                            <img src="percent03.png" width="80" alt="Feature image">
-                            <p>Interest Rate For Loan
-                            </p>
-                        </div>
-                        <div class="box03_right_image_bottom_content hidden-image-right-slow">
-                            <h3>30M</h3>
-                            <p>Available for loan</p>
-                        </div>
-                    </div>
-                    <div class="box03_right_image box03_right_image04" style="display: none;">
-                        <img src="features02.png" alt="Feature image">
-                        <div class="box03_right_image_top_content">
-                            <img src="percent04.png" width="80" alt="Feature image">
-                            <p>Interest Rate For Loan
-                            </p>
-                        </div>
-                        <div class="box03_right_image_bottom_content hidden-image-right-slow">
-                            <h3>28M</h3>
                             <p>Available for loan</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="features_shape.png" width="70" alt="shape-icon" class="feature__shape hidden">
-        <img src="shape01.png" class="wp-image-238" />
+        <!-- <img src="features_shape.png" width="70" alt="shape-icon" class="feature__shape"> -->
+        <div class="wp-image-238_div">
+            <img src="shape01.png" class="wp-image-238" />
+        </div>
         <div class="box box04">
             <div class="box04_heading">
                 <h2 class="box_heading">
@@ -327,7 +294,9 @@
                 </div>
             </div>
         </div>
-        <img src="shape01.png" class="wp-image-238" />
+        <div class="wp-image-238_div">
+            <img src="shape01.png" class="wp-image-238" />
+        </div>
         <div class="box box05">
             <div class="box05_heading">
                 <h2 class="box_heading">
@@ -342,113 +311,122 @@
                 </p>
             </div>
             <div class="box_boxs-content box05_boxs-content">
-                <div class="box05_down_box box05_down_box-left hidden-image-right">
-                    <div class="box05_down_box-content">
-                        <div class="box05_down_box-header">
-                            <h3>Project Research</h3>
-                            <span>P1</span>
+                <div class="box05_left">
+                    <div class="box05_down_box box05_down_box-left hidden-image-left">
+                        <div class="box05_down_box-content">
+                            <div class="box05_down_box-header">
+                                <h3>Framing Idea</h3>
+                                <span>P2</span>
+                            </div>
+                            <p>Project research is the backbone of any successful
+                                project.
+                                It involves gathering information, setting
+                                objectives,
+                                and
+                                analyzing data to ensure the project is achievable.
+                                Without
+                                proper research, projects can fail due to lack of
+                                knowledge.
+                            </p>
                         </div>
-                        <p>Project research is the backbone of any successful
-                            project.
-                            It involves gathering information, setting
-                            objectives,
-                            and
-                            analyzing data to ensure the project is achievable.
-                            Without
-                            proper research, projects can fail due to lack of
-                            knowledge.
-                        </p>
+                    </div>
+                    <div class="box05_down_box box05_down_box-left hidden-image-left">
+                        <div class="box05_down_box-content">
+                            <div class="box05_down_box-header">
+                                <h3>Final Design</h3>
+                                <span>P4</span>
+                            </div>
+                            <p>So after lots of reiterations, and endless tweaking,
+                                we
+                                finally landed on the final design. It's slick, it's
+                                modern,
+                                and it perfectly captures the essence of what we
+                                were
+                                aiming
+                                for. We couldn't be more excited to launch it!</p>
+                        </div>
+                    </div>
+                    <div class="box05_down_box box05_down_box-left hidden-image-left">
+                        <div class="box05_down_box-content">
+                            <div class="box05_down_box-header">
+                                <h3>Launch Project</h3>
+                                <span>P6</span>
+                            </div>
+                            <p>Alright folks, it's time to get this project off the
+                                ground!
+                                We've been talking about it for weeks, and now it's
+                                time
+                                to
+                                launch. We've got all the pieces in place, so let's
+                                get
+                                to
+                                work and make this thing happen!</p>
+                        </div>
                     </div>
                 </div>
-                <div class="box05_down_box box05_down_box-right hidden-image-left">
-                    <div class="box05_down_box-content">
-                        <div class="box05_down_box-header">
-                            <h3>Framing Idea</h3>
-                            <span>P2</span>
-                        </div>
-                        <p>Project research is the backbone of any successful
-                            project.
-                            It involves gathering information, setting
-                            objectives,
-                            and
-                            analyzing data to ensure the project is achievable.
-                            Without
-                            proper research, projects can fail due to lack of
-                            knowledge.
-                        </p>
-                    </div>
+                <div class="box05_middle">
+                    <div class="box05_middle_top"></div>
+                    <div class="box05_middle_bottom"></div>
                 </div>
-                <div class="box05_down_box box05_down_box-left hidden-image-right">
-                    <div class="box05_down_box-content">
-                        <div class="box05_down_box-header">
-                            <h3>Design First Draft</h3>
-                            <span>P3</span>
+                <div class="box05_right">
+                    <div class="box05_down_box box05_down_box-right hidden-image-right">
+                        <div class="box05_down_box-content">
+                            <div class="box05_down_box-header">
+                                <h3>Project Research</h3>
+                                <span>P1</span>
+                            </div>
+                            <p>Project research is the backbone of any successful
+                                project.
+                                It involves gathering information, setting
+                                objectives,
+                                and
+                                analyzing data to ensure the project is achievable.
+                                Without
+                                proper research, projects can fail due to lack of
+                                knowledge.
+                            </p>
                         </div>
-                        <p>Project research is the backbone of any successful
-                            project.
-                            It involves gathering information, setting
-                            objectives,
-                            and
-                            analyzing data to ensure the project is achievable.
-                            Without
-                            proper research, projects can fail due to lack of
-                            knowledge.
-                        </p>
                     </div>
-                </div>
-                <div class="box05_down_box box05_down_box-right hidden-image-left">
-                    <div class="box05_down_box-content">
-                        <div class="box05_down_box-header">
-                            <h3>Final Design</h3>
-                            <span>P4</span>
+                    <div class="box05_down_box box05_down_box-right hidden-image-right">
+                        <div class="box05_down_box-content">
+                            <div class="box05_down_box-header">
+                                <h3>Design First Draft</h3>
+                                <span>P3</span>
+                            </div>
+                            <p>Project research is the backbone of any successful
+                                project.
+                                It involves gathering information, setting
+                                objectives,
+                                and
+                                analyzing data to ensure the project is achievable.
+                                Without
+                                proper research, projects can fail due to lack of
+                                knowledge.
+                            </p>
                         </div>
-                        <p>So after lots of reiterations, and endless tweaking,
-                            we
-                            finally landed on the final design. It's slick, it's
-                            modern,
-                            and it perfectly captures the essence of what we
-                            were
-                            aiming
-                            for. We couldn't be more excited to launch it!</p>
                     </div>
-                </div>
-                <div class="box05_down_box box05_down_box-left hidden-image-right">
-                    <div class="box05_down_box-content">
-                        <div class="box05_down_box-header">
-                            <h3>Project Development</h3>
-                            <span>P5</span>
+                    <div class="box05_down_box box05_down_box-right hidden-image-right">
+                        <div class="box05_down_box-content">
+                            <div class="box05_down_box-header">
+                                <h3>Project Development</h3>
+                                <span>P5</span>
+                            </div>
+                            <p>So we're deep in project development here, and things
+                                are
+                                coming along nicely. We've got a solid plan in place
+                                and
+                                our
+                                team is firing on all cylinders. There's still work
+                                to
+                                be
+                                done, but we're excited about what we're building.
+                            </p>
                         </div>
-                        <p>So we're deep in project development here, and things
-                            are
-                            coming along nicely. We've got a solid plan in place
-                            and
-                            our
-                            team is firing on all cylinders. There's still work
-                            to
-                            be
-                            done, but we're excited about what we're building.
-                        </p>
-                    </div>
-                </div>
-                <div class="box05_down_box box05_down_box-right hidden-image-left">
-                    <div class="box05_down_box-content">
-                        <div class="box05_down_box-header">
-                            <h3>Launch Project</h3>
-                            <span>P6</span>
-                        </div>
-                        <p>Alright folks, it's time to get this project off the
-                            ground!
-                            We've been talking about it for weeks, and now it's
-                            time
-                            to
-                            launch. We've got all the pieces in place, so let's
-                            get
-                            to
-                            work and make this thing happen!</p>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- ******************************************************************************  -->
         <div class="box box05b">
             <div class="box05_heading">
                 <h2 class="box_heading">
@@ -570,7 +548,10 @@
                 </div>
             </div>
         </div>
-        <img src="shape01.png" class="wp-image-238" />
+        <!-- ******************************************************************************  -->
+        <div class="wp-image-238_div">
+            <img src="shape01.png" class="wp-image-238" />
+        </div>
         <div class="box box06">
             <div class="box06_heading">
                 <h2 class="box_heading">
@@ -662,7 +643,9 @@
                 </div>
             </div>
         </div>
-        <img src="shape01.png" class="wp-image-238" />
+        <div class="wp-image-238_div">
+            <img src="shape01.png" class="wp-image-238" />
+        </div>
         <div class="box box07">
             <div class="box07_heading">
                 <h2 class="box_heading"> Meet Our <span>Advisers</span></h2>
@@ -756,7 +739,9 @@
                 <a href="#" target="_self" rel="nofollow">Viewmore </a>
             </div>
         </div>
-        <img src="shape01.png" class="wp-image-238" />
+        <div class="wp-image-238_div">
+            <img src="shape01.png" class="wp-image-238" />
+        </div>
         <div class="box box08">
             <div class="box08_heading">
                 <h2 class="box_heading"><span>Articles </span> For Pro Traders</h2>
@@ -822,12 +807,16 @@
                     </div>
                 </div>
             </div>
-            <div class="box_down_box_viewmore">
-                <a href="#" target="_self" rel="nofollow">View
-                    more </a>
+            <div class="box_down_box_viewmore_parent">
+                <div class="box_down_box_viewmore">
+                    <a href="#" target="_self" rel="nofollow">View
+                        more </a>
+                </div>
             </div>
         </div>
-        <img src="shape01.png" class="wp-image-238" />
+        <div class="wp-image-238_div">
+            <img src="shape01.png" class="wp-image-238" />
+        </div>
         <div class="box box09">
             <div class="box09_heading">
                 <h2 class="box_heading"> Connect With <span>Our Clients</span></h2>
@@ -891,7 +880,9 @@
                 </div>
             </div>
         </div>
-        <img src="shape01.png" class="wp-image-238" />
+        <div class="wp-image-238_div">
+            <img src="shape01.png" class="wp-image-238" />
+        </div>
         <div class="box box10">
             <div class="box10_heading">
                 <h2 class="box_heading"> <span>Frequently</span> Asked Questions </h2>
@@ -995,13 +986,17 @@
                         </div>
                     </div>
                 </div>
-                <img src="faq.png" class="wp-image-301" />
+                <div class="box10_right">
+                    <img src="faq.png" class="wp-image-301" />
+                </div>
             </div>
         </div>
         <div class="box box11">
             <img src="cta_shape1.png" class="wp-image-341" />
             <div class="box_boxs-content box11_boxs-content">
-                <img src="cta.png" class="wp-image-312" />
+                <div class="box11_left">
+                    <img src="cta.png" class="wp-image-312" />
+                </div>
                 <div class="box11_right">
                     <div class="box11_heading">
                         <h2 class="box_heading"><span>Subscribe </span>Our News
@@ -1021,127 +1016,113 @@
             <img src="shape01.png" class="wp-image-238 wp-image-238-00" />
         </div>
 
-        <footer itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="colophon" role="contentinfo">
-            <div class="box_boxs-content e-con-inner_footer__shape">
-                <div class="elementor-element-bd984a0">
-                    <div class="elementor-element-455b42f">
-                        <a class='elementor-clickable' href="#">
-                            <div class="hfe-site-logo"><img class="hfe-site-logo-img elementor-animation-"
-                                    src="DonthuTradersLogo-logo.png" alt="logo-dark" />
-                                <div>
-                                    <div class="header_logotext_donthu00">Donthu Traders</div>
-                                    <div class="header_logotext_trade24x700">Trade24X7</div>
+        <footer class="box footer_box">
+            <div class="box_boxs-content footer_boxs-content">
+                <div class="footer_top">
+                    <div class="footer_top_left">
+                        <a href="#">
+                            <div class="footer_top_left-logo"><img src="DonthuTradersLogo-logo.png" alt="logo-dark" />
+                                <div class="footer_logotext_constent">
+                                    <div class="footer_logotext_donthu">Donthu Traders</div>
+                                    <div class="footer_logotext_trade24x7">Trade24X7</div>
                                 </div>
                             </div>
                         </a>
                         <div>
-                            <p class=" elementor-heading-title-default elementor-size-default">Welcome toourtrading
+                            <p class="footer_top_left_para">Welcome toourtrading
                                 site!
                                 We offer the best, mostaffordableproductsandservicesaround. Shop now and start finding
                                 greatdeals!
                             </p>
                         </div>
-                        <div class="elementor-element elementor-element-319c32e elementor-widget elementor-widget-html">
-                            <div class="footer__app">
-                                <div class="footer__app-item footer__app-item--apple">
-                                    <div class="footer__app-thumb"> <a href="#" target="_blank"
-                                            class="box07_down_box-stretched_link"> <img src="apple.png"
-                                                alt="apple-icon">
-                                        </a> </div>
-                                    <div class="footer__app-content"> <span>Download on the</span>
-                                        <p class="mb-0L">App Store </p>
-                                    </div>
+                        <div class="footer_top_left_playstore">
+                            <div class="footer_top_left_playstore_apple">
+                                <a href="#" target="_blank"> <img src="apple.png" alt="apple-icon">
+                                </a>
+                                <div class="footer_app-content"> <span>Download on the</span>
+                                    <p class="mb-0L">App Store </p>
                                 </div>
-                                <div class="footer__app-item footer__app-item--playstore">
-                                    <div class="footer__app-thumb"> <a href="#" target="_blank"
-                                            class="box07_down_box-stretched_link"> <img src="play.png"
-                                                alt="playstore-icon">
-                                        </a> </div>
-                                    <div class="footer__app-content"> <span>GET IT ON</span>
-                                        <p class="mb-0R">Google Play </p>
-                                    </div>
+                            </div>
+                            <div class="footer_top_left_playstore_googleplay">
+                                <a href="#" target="_blank" class="box07_down_box-stretched_link"><img src="play.png"
+                                        alt="playstore-icon">
+                                </a>
+                                <div class="footer_app-content"> <span>GET IT ON</span>
+                                    <p class="mb-0R">Google Play </p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="elementor-element-7c023eb">
-                        <div class="elementor-element-ec42b89">
-                            <div class="elementor-widget-container_size-default">
-                                <h5> Quick links</h5>
-                            </div>
+                    <div class="footer_top_right">
+                        <div class="footer_top_right_content">
+                            <h5> Quick links</h5>
                             <div>
                                 <link rel="stylesheet" href="#">
-                                <ul class="elementor-icon-list-items">
-                                    <li class="elementor-icon-list-item"> <a href="#">
-                                            <span class="elementor-icon-list-text">About Us</span> </a> </li>
-                                    <li class="elementor-icon-list-item"> <a href="#"> <span
-                                                class="elementor-icon-list-text">Teams</span> </a> </li>
-                                    <li class="elementor-icon-list-item"> <a href="#"> <span
-                                                class="elementor-icon-list-text">Services</span> </a> </li>
-                                    <li class="elementor-icon-list-item"> <a href="#"> <span
-                                                class="elementor-icon-list-text">Features</span> </a> </li>
+                                <ul>
+                                    <li> <a href="#">
+                                            <span class="footer_top_right_content_list-text">About Us</span> </a> </li>
+                                    <li> <a href="#"> <span class="footer_top_right_content_list-text">Teams</span> </a>
+                                    </li>
+                                    <li> <a href="#"> <span class="footer_top_right_content_list-text">Services</span>
+                                        </a> </li>
+                                    <li> <a href="#"> <span class="footer_top_right_content_list-text">Features</span>
+                                        </a> </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="elementor-element-ec42b89">
-                            <div class="elementor-widget-container_size-default">
-                                <h5> Support</h5>
-                            </div>
+                        <div class="footer_top_right_content">
+                            <h5> Support</h5>
                             <div>
-                                <ul class="elementor-icon-list-items">
-                                    <li class="elementor-icon-list-item"> <a href="#"> <span
-                                                class="elementor-icon-list-text">Terms & Conditions</span> </a> </li>
-                                    <li class="elementor-icon-list-item"> <a href="#"> <span
-                                                class="elementor-icon-list-text">Privacy Policy</span> </a> </li>
-                                    <li class="elementor-icon-list-item"> <a href="#"> <span
-                                                class="elementor-icon-list-text">FAQs</span> </a> </li>
-                                    <li class="elementor-icon-list-item"> <a href="#"> <span
-                                                class="elementor-icon-list-text">Support Center</span> </a> </li>
+                                <ul>
+                                    <li> <a href="#"> <span class="footer_top_right_content_list-text">Terms &
+                                                Conditions</span>
+                                        </a> </li>
+                                    <li> <a href="#"> <span class="footer_top_right_content_list-text">Privacy
+                                                Policy</span> </a>
+                                    </li>
+                                    <li> <a href="#"> <span class="footer_top_right_content_list-text">FAQs</span> </a>
+                                    </li>
+                                    <li> <a href="#"> <span class="footer_top_right_content_list-text">Support
+                                                Center</span> </a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="elementor-element-ec42b89">
-                            <div class="elementor-widget-container_size-default">
-                                <h5> Company</h5>
-                            </div>
+                        <div class="footer_top_right_content">
+                            <h5> Company</h5>
                             <div>
-                                <ul class="elementor-icon-list-items">
-                                    <li class="elementor-icon-list-item"> <a href="#"> <span
-                                                class="elementor-icon-list-text">Careers</span> </a> </li>
-                                    <li class="elementor-icon-list-item"> <a href="#"> <span
-                                                class="elementor-icon-list-text">Updates</span> </a> </li>
-                                    <li class="elementor-icon-list-item"> <a href="#"> <span
-                                                class="elementor-icon-list-text">Job</span> </a> </li>
-                                    <li class="elementor-icon-list-item"> <a href="#"> <span
-                                                class="elementor-icon-list-text">Announce</span> </a> </li>
+                                <ul>
+                                    <li> <a href="#"> <span class="footer_top_right_content_list-text">Careers</span>
+                                        </a> </li>
+                                    <li> <a href="#"> <span class="footer_top_right_content_list-text">Updates</span>
+                                        </a> </li>
+                                    <li> <a href="#"> <span class="footer_top_right_content_list-text">Job</span> </a>
+                                    </li>
+                                    <li> <a href="#"> <span class="footer_top_right_content_list-text">Announce</span>
+                                        </a> </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="line"></div>
-                <div class="elementor-element-39c3f15">
-                    <div class="elementor-element elementor-element-c35f4f8 elementor-widget elementor-widget-heading">
-                        <div>
-                            <p class="elementor-heading-title_2023 elementor-size-default">©2023AllRightsReserved By
-                                Thetork</p>
-                        </div>
+                <div class="footer_bottom">
+                    <div class="footer_bottom_left">
+                        <p>©2023AllRightsReserved By
+                            Thetork</p>
                     </div>
-                    <div
-                        class="elementor-element elementor-element-9b0d4fd elementor-widget elementor-widget-sociallist">
-                        <div>
-                            <ul class="social list-wrap list-wrap01"><a href="https://www.facebook.com/nkumardo/"
-                                    target="_blank"><img src="facebook_logo.png" alt="facebook_logo"></a><a
-                                    href="https://www.instagram.com/donthutraders/" target="_blank"><img
-                                        src="instagram-logo.jpg" alt="instagram-logo"></a><a
-                                    href="https://www.linkedin.com/in/naveen-kumar-donthu-7867a118/?originalSubdomain=in"
-                                    target="_blank"><img src="linkedin-logo.jpg" alt="linkedin-logo"></a><a
-                                    href="https://www.urbanpro.com/bangalore/donthu-traders-beml-layout?_tp=116"
-                                    target="_blank"><img src="urbanpro-logo.jpeg" alt="urbanpro"></a><a
-                                    href="https://web.whatsapp.com/" target="_blank"><img src="whatapp-logo.jpeg"
-                                        alt="whatapp-logo"></a>
-                            </ul>
-                        </div>
+                    <div class="footer_bottom_right">
+                        <ul class="list-wrap01"><a href="https://www.facebook.com/nkumardo/" target="_blank"><img
+                                    src="facebook_logo.png" alt="facebook_logo"></a><a
+                                href="https://www.instagram.com/donthutraders/" target="_blank"><img
+                                    src="instagram-logo.jpg" alt="instagram-logo"></a><a
+                                href="https://www.linkedin.com/in/naveen-kumar-donthu-7867a118/?originalSubdomain=in"
+                                target="_blank"><img src="linkedin-logo.jpg" alt="linkedin-logo"></a><a
+                                href="https://www.urbanpro.com/bangalore/donthu-traders-beml-layout?_tp=116"
+                                target="_blank"><img src="urbanpro-logo.jpeg" alt="urbanpro"></a><a
+                                href="https://web.whatsapp.com/" target="_blank"><img src="whatapp-logo.jpeg"
+                                    alt="whatapp-logo"></a>
+                        </ul>
                     </div>
                 </div>
                 <img src="footer_shape.png" class="wp-image-419 hidden" loading="lazy" />
@@ -1151,31 +1132,5 @@
 </body>
 
 <script src="script.js"></script>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        // Get references to the elements
-        var menuButton = document.getElementById("menubtn");
-        var closeButton = document.getElementById("closebtn");
-        var menuList = document.querySelector(".header_main-menu_ul01");
-        menuList.style.display = "none";
-
-        // Event listener for the menu button
-        menuButton.addEventListener("click", function () {
-            // Show the menu and hide the menu button
-            menuList.style.display = "block";
-            menuButton.style.display = "none";
-            closeButton.style.display = "inline-block"; // Show close button
-        });
-
-        // Event listener for the close button
-        closeButton.addEventListener("click", function () {
-            // Hide the menu and show the menu button
-            menuList.style.display = "none";
-            menuButton.style.display = "inline-block"; // Show menu button
-            closeButton.style.display = "none";
-        });
-    });
-</script>
 
 </html>

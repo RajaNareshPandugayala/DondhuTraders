@@ -121,6 +121,50 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', checkVisibility);
 });
 
+
+document.addEventListener('DOMContentLoaded', function () {
+    const isMobileView = window.innerWidth < 768; // You can adjust the breakpoint as needed
+    const leftImages = document.querySelectorAll('.hidden-image-left');
+    const rightImages = document.querySelectorAll('.hidden-image-right');
+    const topImages = document.querySelectorAll('.hidden-image-top');
+    const slowImages = document.querySelectorAll('.hidden-image-right-slow');
+
+    function checkVisibility(images, offset) {
+        images.forEach(image => {
+            const rect = image.getBoundingClientRect();
+            const isVisible = rect.top >= offset;
+
+            if (isVisible) {
+                image.classList.add('visible-image');
+            } else {
+                image.classList.remove('visible-image');
+            }
+        });
+    }
+
+    function handleScroll() {
+        if (isMobileView) {
+            checkVisibility(leftImages, 220);
+            checkVisibility(rightImages, 220);
+            checkVisibility(topImages, 350);
+            checkVisibility(slowImages, 270);
+        } else {
+            checkVisibility(leftImages, 450);
+            checkVisibility(rightImages, 450);
+            checkVisibility(topImages, 700);
+            checkVisibility(slowImages, 550);
+        }
+    }
+
+    checkVisibility(leftImages, isMobileView ? 220 : 450);
+    checkVisibility(rightImages, isMobileView ? 220 : 450);
+    checkVisibility(topImages, isMobileView ? 350 : 700);
+    checkVisibility(slowImages, isMobileView ? 270 : 550);
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll); // Handle resize events to adjust for changes in viewport width
+});
+
 /************************animation*********************************/
 
 

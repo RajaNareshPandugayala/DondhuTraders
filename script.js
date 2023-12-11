@@ -190,6 +190,7 @@ function stickyHeader() {
 
 // Cache the selectors for better performance
 const header = document.getElementsByClassName('sticky');
+const sticky_header = document.getElementById('sticky-header');
 const moon = document.getElementById('btnSwitch');
 const icon = moon.querySelector('img');
 const anchorTag = document.querySelectorAll('a');
@@ -198,8 +199,8 @@ const box04DownBox = document.getElementsByClassName('box04_down_box ');
 const box05DownBox = document.getElementsByClassName('box05_down_box');
 const floatingContentTopLeft = document.getElementsByClassName('floating-content__top-left');
 const floatingContentBottomRight = document.getElementsByClassName('floating-content__bottom-right');
-const floatingContentItemStyle2 = document.getElementsByClassName('floating-content__item--style2');
-const floatingContentItemStyle3 = document.getElementsByClassName('floating-content__item--style3');
+const box03RightImageTopContent = document.getElementsByClassName('box03_right_image_top_content');
+const box03RightImageBottomContent = document.getElementsByClassName('box03_right_image_bottom_content');
 const box06DownBox = document.getElementsByClassName('box06_down_box');
 const box10LeftContentButton = document.getElementsByClassName('box10_left_content-button');
 const box08DownBox = document.getElementsByClassName('box08_down_box');
@@ -210,6 +211,9 @@ const box07DownBoxATag = document.getElementsByClassName('box07_down_box_a-tag')
 const headerMainMenuUlLi01A = document.querySelectorAll('.header_main-menu_ul-li01-a');
 const box05Middle = document.querySelectorAll('.box05_middle');
 const boxContent = document.getElementsByClassName('box_content');
+const para = document.getElementsByClassName('para');
+
+
 
 
 
@@ -232,7 +236,12 @@ moon.addEventListener('click', () => {
 
     // Access elements by index
     for (let i = 0; i < header.length; i++) {
-        header[i].style.backgroundColor = theme === 'light' ? 'black' : 'white';
+        header[i].style.backgroundColor = theme === 'light' ? 'black' : 'whitesmoke';
+
+    }
+
+    for (let i = 0; i < sticky_header.length; i++) {
+        sticky_header[i].style.backgroundColor = theme === 'light' ? 'whitesmoke' : 'black';
 
     }
 
@@ -262,12 +271,12 @@ moon.addEventListener('click', () => {
         floatingContentBottomRight[i].style.backgroundColor = theme === 'light' ? '#001515' : 'white';
     }
 
-    for (let i = 0; i < floatingContentItemStyle2.length; i++) {
-        floatingContentItemStyle2[i].style.backgroundColor = theme === 'light' ? '#001515' : 'white';
+    for (let i = 0; i < box03RightImageTopContent.length; i++) {
+        box03RightImageTopContent[i].style.backgroundColor = theme === 'light' ? '#001515' : 'white';
     }
 
-    for (let i = 0; i < floatingContentItemStyle3.length; i++) {
-        floatingContentItemStyle3[i].style.backgroundColor = theme === 'light' ? '#001515' : 'white';
+    for (let i = 0; i < box03RightImageBottomContent.length; i++) {
+        box03RightImageBottomContent[i].style.backgroundColor = theme === 'light' ? '#001515' : 'white';
     }
 
     for (let i = 0; i < box06DownBox.length; i++) {
@@ -294,6 +303,10 @@ moon.addEventListener('click', () => {
         box03LeftListH6[i].style.backgroundColor = theme === 'light' ? '#001515' : 'whitesmoke';
     }
 
+    for (let i = 0; i < box03LeftListH6.length; i++) {
+        box03LeftListH6[i].style.backgroundColor = theme === 'light' ? '#001515' : 'white';
+    }
+
     for (let i = 0; i < box07DownBoxATag.length; i++) {
         box07DownBoxATag[i].style.backgroundColor = theme === 'light' ? '#001515' : 'whitesmoke';
     }
@@ -308,6 +321,10 @@ moon.addEventListener('click', () => {
 
     for (let i = 0; i < boxContent.length; i++) {
         boxContent[i].style.color = theme === 'light' ? 'gray' : 'rgb(50, 50, 50)';
+    }
+
+    for (let i = 0; i < para.length; i++) {
+        para[i].style.color = theme === 'light' ? 'whitesmoke' : 'black';
     }
 
 

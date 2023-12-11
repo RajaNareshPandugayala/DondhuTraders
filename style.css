@@ -26,7 +26,7 @@ a {
 }
 
 p {
-    color: gray;
+    color: black;
 }
 
 /***********************loading_page.html-Start******************************/
@@ -236,7 +236,7 @@ p {
 
 
 .box_content {
-    color: gray;
+    color: black;
     word-spacing: 2px;
     font-size: 17px;
     font-weight: lighter;
@@ -597,8 +597,8 @@ p {
     font-size: 16px;
     padding: 30px 10px;
     border-radius: 0.5cm;
-    background-color: whitesmoke;
-    color: gray;
+    background-color: white;
+    color: black;
 }
 
 .box03_right {
@@ -919,7 +919,7 @@ p {
 
 .box06_down_box-content span {
     font-size: 18px;
-    color: gray;
+    color: black;
 }
 
 .box06_down_box-content {
@@ -1435,7 +1435,7 @@ form {
 }
 
 .footer_top_left_para {
-    color: rgb(159, 158, 158);
+    color: whitesmoke;
     /* border: 2px solid red; */
 }
 
@@ -1544,6 +1544,15 @@ form {
     left: 355px;
     animation: moveLeftToRight 2s linear infinite alternate;
     width: 60px;
+}
+
+.footer_bottom_left p {
+    color: #EDF2F8;
+}
+
+
+.para {
+    color: black;
 }
 
 /***********************************footer_Css-End**********************************/

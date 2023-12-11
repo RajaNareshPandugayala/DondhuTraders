@@ -190,7 +190,7 @@ function stickyHeader() {
 
 // Cache the selectors for better performance
 const header = document.getElementsByClassName('sticky');
-const sticky_header = document.getElementById('sticky-header');
+// const sticky_header = document.getElementById('sticky-header');
 const moon = document.getElementById('btnSwitch');
 const icon = moon.querySelector('img');
 const anchorTag = document.querySelectorAll('a');
@@ -236,14 +236,14 @@ moon.addEventListener('click', () => {
 
     // Access elements by index
     for (let i = 0; i < header.length; i++) {
-        header[i].style.backgroundColor = theme === 'light' ? 'black' : 'whitesmoke';
+        header[i].style.backgroundColor = theme === 'light' ? 'whitesmoke' : 'black';
 
     }
 
-    for (let i = 0; i < sticky_header.length; i++) {
-        sticky_header[i].style.backgroundColor = theme === 'light' ? 'whitesmoke' : 'black';
+    // for (let i = 0; i < sticky_header.length; i++) {
+    //     sticky_header[i].style.backgroundColor = theme === 'light' ? 'whitesmoke' : 'black';
 
-    }
+    // }
 
     for (let i = 0; i < anchorTag.length; i++) {
         anchorTag[i].style.color = theme === 'light' ? 'white' : 'black';

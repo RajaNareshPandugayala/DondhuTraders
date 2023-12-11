@@ -221,6 +221,7 @@ p {
     /* border: 2px solid orange; */
     width: 100%;
     /* padding: 10px 20px; */
+    margin-bottom: 80px;
 }
 
 
@@ -268,6 +269,10 @@ p {
     /* border: 2px solid red; */
 }
 
+#sticky-header {
+    margin-bottom: 0px;
+}
+
 .header_logo img {
     border-radius: 50%;
     width: 50px;
@@ -294,9 +299,7 @@ p {
     font-size: 15px;
 }
 
-.header_logotext_trade24x7 {
-    letter-spacing: 4px;
-}
+
 
 .header_main-menu_ul {
     display: flex;

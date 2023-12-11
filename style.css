@@ -2674,7 +2674,8 @@ form {
         flex-wrap: wrap;
     }
 
-    .box01_left_a-tag a {
+    .box01_left_a-tag a,
+    .box02_button {
         width: 200px;
     }
 

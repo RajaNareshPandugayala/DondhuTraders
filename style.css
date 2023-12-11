@@ -12,7 +12,6 @@ body {
     /* overflow-x: hidden; */
     /* overflow-y: hidden; */
     background-color: whitesmoke;
-    /* margin-top: 80px; */
 }
 
 .hidden {
@@ -214,6 +213,8 @@ p {
 /***************************DarkLight_switch-End******************************/
 
 /***********************************Common_box-Start**********************************/
+
+
 .box {
     display: flex;
     justify-content: center;
@@ -297,6 +298,7 @@ p {
     text-transform: capitalize;
     font-family: "Anek Telugu", sans-serif;
     font-size: 15px;
+    text-shadow: 0px 0px 50px green;
 }
 
 
@@ -1374,7 +1376,8 @@ form {
     background-color: #13271d;
     color: antiquewhite;
     padding: 30px;
-
+    margin-bottom: 0px;
+    /* border: 2px solid #0A4FD5; */
 }
 
 .footer_box li {

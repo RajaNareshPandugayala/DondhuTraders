@@ -122,6 +122,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+
+// MobileView
 document.addEventListener('DOMContentLoaded', function () {
     const isMobileView = window.innerWidth < 768; // You can adjust the breakpoint as needed
     const leftImages = document.querySelectorAll('.hidden-image-left');
@@ -190,7 +192,7 @@ function stickyHeader() {
 
 // Cache the selectors for better performance
 const header = document.getElementsByClassName('sticky');
-// const sticky_header = document.getElementById('sticky-header');
+const sticky_header = document.getElementsByClassName('sticky-header');
 const moon = document.getElementById('btnSwitch');
 const icon = moon.querySelector('img');
 const anchorTag = document.querySelectorAll('a');
@@ -223,6 +225,8 @@ const para = document.getElementsByClassName('para');
 const body = document.body;
 
 moon.addEventListener('click', () => {
+
+    stickyHeader()
     const theme = document.documentElement.dataset.bsTheme === 'light' ? 'dark' : 'light';
     document.documentElement.dataset.bsTheme = theme;
 
@@ -236,14 +240,14 @@ moon.addEventListener('click', () => {
 
     // Access elements by index
     for (let i = 0; i < header.length; i++) {
-        header[i].style.backgroundColor = theme === 'light' ? 'whitesmoke' : 'black';
+        header[i].style.backgroundColor = theme === 'light' ? 'black' : 'whitesmoke';
 
     }
 
-    // for (let i = 0; i < sticky_header.length; i++) {
-    //     sticky_header[i].style.backgroundColor = theme === 'light' ? 'whitesmoke' : 'black';
+    for (let i = 0; i < sticky_header.length; i++) {
+        sticky_header[i].style.backgroundColor = theme === 'light' ? 'black' : 'whitesmoke';
 
-    // }
+    }
 
     for (let i = 0; i < anchorTag.length; i++) {
         anchorTag[i].style.color = theme === 'light' ? 'white' : 'black';

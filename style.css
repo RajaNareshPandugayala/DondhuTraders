@@ -1981,12 +1981,45 @@ form {
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
         background-color: #13271d;
         border-radius: 50%;
         width: 35px;
     }
 
+    #closebtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 50%;
+        width: 35px;
+        font-size: 24px;
+    }
 
+    .header_main-menu_ul01 {
+        list-style-type: none;
+        position: absolute;
+        top: 92px;
+        right: 20px;
+        background-color: #EDF2F8;
+        width: 75%;
+    }
+
+    .header_main-menu_ul-li01 {
+        padding: 10px;
+        color: #13271d;
+    }
+
+    .header_main-menu_ul-li01:hover {
+        background-color: gray;
+    }
+
+    .header_main-menu_ul-li01 {
+        border: 0.5px solid lightgrey;
+        border-right: none;
+        border-left: none;
+    }
 
     .header_boxs-content {
         display: flex;

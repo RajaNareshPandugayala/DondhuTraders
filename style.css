@@ -2329,7 +2329,7 @@ form {
         flex-wrap: wrap;
         /* border: 2px solid orange; */
         width: 100%;
-        padding: 10px 30px;
+        padding: 10px 40px;
     }
 
     .box_boxs-content {
@@ -2601,7 +2601,7 @@ form {
         flex-wrap: wrap;
         /* border: 2px solid orange; */
         width: 100%;
-        padding: 10px 30px;
+        padding: 10px 40px;
     }
 
     .box_boxs-content {
@@ -2612,7 +2612,7 @@ form {
         flex-wrap: wrap;
         /* border: red solid 1px; */
         width: 100%;
-        gap: 50px;
+        gap: 30px;
     }
 
 
@@ -2816,7 +2816,7 @@ form {
     }
 
     .box03_right_image img {
-        width: 320px;
+        width: 100%;
         /* border: 2px solid blue; */
     }
 
@@ -2825,13 +2825,21 @@ form {
     }
 
     .box03_right_image_top_content {
-        left: 25px;
+        left: 35px;
+        padding: 10px;
         /* border: 2px solid blue; */
     }
 
     .box03_right_image_bottom_content {
         top: 10px;
-        left: 20px;
+        left: 25px;
+        padding: 10px;
+        /* border: 2px solid blue; */
+    }
+
+    .box03_right_image_bottom_content {
+        top: 10px;
+        left: 40px;
         /* border: 2px solid blue; */
     }
 
@@ -2900,7 +2908,7 @@ form {
         flex-wrap: wrap;
         /* border: 2px solid orange; */
         width: 100%;
-        padding: 10px 30px;
+        padding: 10px 35px;
     }
 
     .box_boxs-content {
@@ -2911,7 +2919,7 @@ form {
         flex-wrap: wrap;
         /* border: red solid 1px; */
         width: 100%;
-        gap: 50px;
+        gap: 30px;
     }
 
 
@@ -3110,7 +3118,7 @@ form {
     }
 
     .box03_right_image img {
-        width: 320px;
+        width: 100%;
         /* border: 2px solid blue; */
     }
 
@@ -3119,13 +3127,15 @@ form {
     }
 
     .box03_right_image_top_content {
-        left: 25px;
+        left: 30px;
+        padding: 10px;
         /* border: 2px solid blue; */
     }
 
     .box03_right_image_bottom_content {
         top: 10px;
         left: 20px;
+        padding: 10px;
         /* border: 2px solid blue; */
     }
 

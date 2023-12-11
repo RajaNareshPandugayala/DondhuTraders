@@ -137,6 +137,30 @@ p {
 }
 
 
+@keyframes fadeSkewM {
+    from {
+        opacity: 0;
+        transform: rotateZ(180deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes fadeSkewX {
+    from {
+        opacity: 0;
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateZ(180deg);
+    }
+}
+
 
 /* Define the keyframe animation */
 @keyframes moveGradient {
@@ -262,11 +286,16 @@ p {
 }
 
 .header_logotext_content {
-    /* color: #262121; */
+    display: flex;
+    flex-direction: column;
     font-weight: bolder;
     text-transform: capitalize;
     font-family: "Anek Telugu", sans-serif;
     font-size: 15px;
+}
+
+.header_logotext_trade24x7 {
+    letter-spacing: 4px;
 }
 
 .header_main-menu_ul {
@@ -708,6 +737,7 @@ p {
     text-align: center;
     width: 100%;
     /* border: 2px solid blue; */
+    display: none;
 }
 
 .wp-image-238 {
@@ -1556,6 +1586,19 @@ form {
         flex-wrap: nowrap;
     }
 
+    .header_logotext_content {
+        gap: 4px;
+    }
+
+    .header_logotext {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        width: 200px;
+        /* border: 1px solid green; */
+    }
+
+
     .header_main-menu_ul {
         display: flex;
         justify-content: space-between;
@@ -1861,7 +1904,7 @@ form {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 320px;
+        width: 300px;
         /* border: 2px solid red; */
     }
 
@@ -1985,6 +2028,8 @@ form {
         background-color: #13271d;
         border-radius: 50%;
         width: 35px;
+        cursor: pointer;
+        animation: fadeSkewM 0.3s linear alternate;
     }
 
     #closebtn {
@@ -1995,25 +2040,26 @@ form {
         border-radius: 50%;
         width: 35px;
         font-size: 24px;
+        cursor: pointer;
+        animation: fadeSkewX 0.3s linear alternate;
     }
 
     .header_main-menu_ul01 {
         list-style-type: none;
         position: absolute;
-        top: 92px;
+        top: 60px;
         right: 20px;
         background-color: #EDF2F8;
-        width: 75%;
+        width: 85%;
     }
 
     .header_main-menu_ul-li01 {
         padding: 10px;
-        color: #13271d;
+        animation: fadeInDown 0.3s linear alternate;
+        /* transition: opacity 0.5s, transform 0.5s; */
+        cursor: pointer;
     }
 
-    .header_main-menu_ul-li01:hover {
-        background-color: gray;
-    }
 
     .header_main-menu_ul-li01 {
         border: 0.5px solid lightgrey;
@@ -2023,7 +2069,7 @@ form {
 
     .header_boxs-content {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -2148,6 +2194,14 @@ form {
         gap: 50px;
     }
 
+    .header_boxs-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
 
     .header_menu_div {
         display: none;
@@ -2178,13 +2232,6 @@ form {
 
 
 
-    .header_boxs-content {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
-        flex-wrap: nowrap;
-    }
 
     .header_main-menu_ul {
         display: flex;
@@ -2408,7 +2455,7 @@ form {
 
     .header_boxs-content {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -2684,7 +2731,7 @@ form {
 
     .header_boxs-content {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -2991,7 +3038,7 @@ form {
 
     .header_boxs-content {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         flex-direction: row;
         flex-wrap: nowrap;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- <html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -84,6 +84,70 @@
         window.addEventListener('scroll', checkVisibility);
     });
 
+</script>
+
+</html> -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Image to Text Transformation</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .hiddenText {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(90deg);
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .rotate {
+            transform: rotate(90deg);
+        }
+
+        .rotate .hiddenText {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="imageContainer">
+        <img src="DonthuTradersLogo-logo.png" alt="Transforming Image">
+        <p class="hiddenText" id="displayText">Your Text Here</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+<script>
+    document.getElementById('imageContainer').addEventListener('click', function () {
+        this.classList.toggle('rotate');
+    });
 </script>
 
 </html>

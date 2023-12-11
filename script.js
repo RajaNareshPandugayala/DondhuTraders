@@ -209,6 +209,7 @@ const box03LeftListH6 = document.getElementsByClassName('box03_left_list_h6');
 const box07DownBoxATag = document.getElementsByClassName('box07_down_box_a-tag');
 const headerMainMenuUlLi01A = document.querySelectorAll('.header_main-menu_ul-li01-a');
 const box05Middle = document.querySelectorAll('.box05_middle');
+const boxContent = document.getElementsByClassName('box_content');
 
 
 
@@ -225,6 +226,7 @@ moon.addEventListener('click', () => {
     moon.style.backgroundColor = theme === 'light' ? 'white' : '#00D094';
     body.style.backgroundColor = theme === 'light' ? 'black' : 'whitesmoke';
     body.style.color = theme === 'light' ? 'white' : 'black';
+
 
 
 
@@ -303,6 +305,11 @@ moon.addEventListener('click', () => {
     for (let i = 0; i < box05Middle.length; i++) {
         box05Middle[i].style.backgroundColor = theme === 'light' ? '#001515' : '#EDF2F8';
     }
+
+    for (let i = 0; i < boxContent.length; i++) {
+        boxContent[i].style.color = theme === 'light' ? 'gray' : 'rgb(50, 50, 50)';
+    }
+
 
 });
 

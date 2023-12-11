@@ -1564,6 +1564,13 @@ form {
         /* border: 2px solid red; */
     }
 
+    .box07_down_box_a-tag {
+        position: relative;
+        left: 5px;
+        right: 5px;
+        bottom: 80px;
+    }
+
     .box01_right {
         justify-content: center;
     }
@@ -1658,6 +1665,13 @@ form {
         align-items: center;
         width: 400px;
         /* border: 2px solid red; */
+    }
+
+    .box07_down_box_a-tag {
+        position: relative;
+        left: 5px;
+        right: 5px;
+        bottom: 85px;
     }
 
     .box01_right {
@@ -2453,7 +2467,9 @@ form {
         align-items: center;
     }
 
-
+    .box01_heading,
+    .box02_heading,
+    .box03_heading,
     .box04_heading,
     .box05_heading,
     .box06_heading,
@@ -2759,7 +2775,7 @@ form {
         align-items: center;
     }
 
-
+    .box01_heading,
     .box02_heading,
     .box03_heading,
     .box04_heading,
@@ -3053,6 +3069,7 @@ form {
         align-items: center;
     }
 
+    .box01_heading,
     .box02_heading,
     .box03_heading,
     .box04_heading,

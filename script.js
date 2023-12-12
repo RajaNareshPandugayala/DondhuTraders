@@ -23,6 +23,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// Function to close the popup
+function closePopup() {
+    var popup = document.querySelector(".box01_left_video");
+    popup.style.display = "none";
+    // updateURL({ function: 'closePopup' }, 'Page Title', '/closePopup');
+}
+
+
+function toggleVideo() {
+    var videoContainer = document.querySelector(".box01_left_video");
+    videoContainer.style.display = (videoContainer.style.display === "none" || videoContainer.style.display === "") ? "flex" : "none";
+}
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
     var menuButton = document.getElementById("menubtn");

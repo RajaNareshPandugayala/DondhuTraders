@@ -7,30 +7,87 @@ window.addEventListener("load", function () {
 });
 
 
+// move up button
+document.addEventListener("DOMContentLoaded", function () {
+    // Add smooth scrolling to all links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+});
+
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Get references to the elements
     var menuButton = document.getElementById("menubtn");
     var closeButton = document.getElementById("closebtn");
     var menuList = document.querySelector(".header_main-menu_ul01");
+    var menuListAs = document.querySelectorAll(".header_main-menu_ul-li01-a");
+
     menuList.style.display = "none";
 
-    // Event listener for the menu button
     menuButton.addEventListener("click", function () {
-        // Show the menu and hide the menu button
         menuList.style.display = "block";
         menuButton.style.display = "none";
-        closeButton.style.display = "inline-block"; // Show close button
+        closeButton.style.display = "inline-block";
     });
 
-    // Event listener for the close button
     closeButton.addEventListener("click", function () {
-        // Hide the menu and show the menu button
         menuList.style.display = "none";
-        menuButton.style.display = "inline-block"; // Show menu button
+        menuButton.style.display = "inline-block";
         closeButton.style.display = "none";
     });
+
+
+    // Event listener for the a button
+    // Loop through each anchor element and add event listener
+    menuListAs.forEach(function (menuListA) {
+        menuListA.addEventListener("click", function () {
+            menuList.style.display = "none";
+            menuButton.style.display = "inline-block";
+            closeButton.style.display = "none";
+        });
+    });
+
+
+    // // Event listener for the home button
+    // homeButton00.addEventListener("click", function () {
+    //     // Hide the menu and show the menu button
+    //     menuList.style.display = "none";
+    //     menuButton.style.display = "inline-block"; // Show menu button
+    //     closeButton.style.display = "none";
+    // });
+
+    // // Event listener for the services button
+    // servicesButton00.addEventListener("click", function () {
+    //     // Hide the menu and show the menu button
+    //     menuList.style.display = "none";
+    //     menuButton.style.display = "inline-block"; // Show menu button
+    //     closeButton.style.display = "none";
+    // });
+
+    // // Event listener for the about us button
+    // aboutUsButton00.addEventListener("click", function () {
+    //     // Hide the menu and show the menu button
+    //     menuList.style.display = "none";
+    //     menuButton.style.display = "inline-block"; // Show menu button
+    //     closeButton.style.display = "none";
+    // });
+
+    // // Event listener for the contact us button
+    // contactUsButton00.addEventListener("click", function () {
+    //     // Hide the menu and show the menu button
+    //     menuList.style.display = "none";
+    //     menuButton.style.display = "inline-block"; // Show menu button
+    //     closeButton.style.display = "none";
+    // });
+
 });
 
 

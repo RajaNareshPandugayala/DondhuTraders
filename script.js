@@ -47,6 +47,121 @@ function toggleVideo() {
 // Function to youtube video the popup **********************************************************
 
 
+// Function to BOX08 BUTTON for div changing **********************************************************
+// document.addEventListener("DOMContentLoaded", function () {
+//     const divs = ["A_div01", "B_div01", "C_div01"];
+//     let currentDivIndex = 0;
+
+//     const updateDisplay = () => {
+//         divs.forEach((divId, index) => {
+//             const displayStyle = index === currentDivIndex ? "block" : "none";
+//             document.getElementById(divId).style.display = displayStyle;
+//         });
+//     };
+
+//     const leftArrowButton = document.getElementById("left_arrow_button01");
+//     const rightArrowButton = document.getElementById("right_arrow_button01");
+
+//     rightArrowButton.addEventListener("click", function () {
+//         currentDivIndex = (currentDivIndex + 1) % divs.length;
+//         updateDisplay();
+//     });
+
+//     leftArrowButton.addEventListener("click", function () {
+//         currentDivIndex = (currentDivIndex - 1 + divs.length) % divs.length;
+//         updateDisplay();
+//     });
+// });
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const divs = ["A_div01", "B_div01", "C_div01"];
+    let currentDivIndex = 0;
+
+    const updateDisplay = () => {
+        divs.forEach((divId, index) => {
+            const displayStyle = index === currentDivIndex ? "block" : "none";
+            document.getElementById(divId).style.display = displayStyle;
+        });
+    };
+
+    const leftArrowButton = document.getElementById("left_arrow_button01");
+    const rightArrowButton = document.getElementById("right_arrow_button01");
+
+    const handleResize = () => {
+        if (window.innerWidth <= 1311) {
+            updateDisplay();
+        } else {
+            // If the window is wider than 1310px, show all divs
+            divs.forEach((divId) => {
+                document.getElementById(divId).style.display = "block";
+            });
+        }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    rightArrowButton.addEventListener("click", function () {
+        currentDivIndex = (currentDivIndex + 1) % divs.length;
+        updateDisplay();
+    });
+
+    leftArrowButton.addEventListener("click", function () {
+        currentDivIndex = (currentDivIndex - 1 + divs.length) % divs.length;
+        updateDisplay();
+    });
+
+    // Initial update on page load
+    handleResize();
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const divs = ["A_div02", "B_div02", "C_div02"];
+    let currentDivIndex = 0;
+
+    const updateDisplay = () => {
+        divs.forEach((divId, index) => {
+            const displayStyle = index === currentDivIndex ? "block" : "none";
+            document.getElementById(divId).style.display = displayStyle;
+        });
+    };
+
+    const leftArrowButton = document.getElementById("left_arrow_button02");
+    const rightArrowButton = document.getElementById("right_arrow_button02");
+
+    const handleResize = () => {
+        if (window.innerWidth <= 1311) {
+            updateDisplay();
+        } else {
+            // If the window is wider than 1310px, show all divs
+            divs.forEach((divId) => {
+                document.getElementById(divId).style.display = "block";
+            });
+        }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    rightArrowButton.addEventListener("click", function () {
+        currentDivIndex = (currentDivIndex + 1) % divs.length;
+        updateDisplay();
+    });
+
+    leftArrowButton.addEventListener("click", function () {
+        currentDivIndex = (currentDivIndex - 1 + divs.length) % divs.length;
+        updateDisplay();
+    });
+
+    // Initial update on page load
+    handleResize();
+});
+// Function to BOX08 BUTTON for div changing **********************************************************
+
 
 
 document.addEventListener("DOMContentLoaded", function () {

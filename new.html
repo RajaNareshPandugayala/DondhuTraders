@@ -42,43 +42,34 @@
             <div class="arrow-button" id="right_arrow_button">&gt;</div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const divs = ["A_div", "B_div", "C_div"];
+            let currentDivIndex = 0;
+
+            const updateDisplay = () => {
+                divs.forEach((divId, index) => {
+                    const displayStyle = index === currentDivIndex ? "block" : "none";
+                    document.getElementById(divId).style.display = displayStyle;
+                });
+            };
+
+            const leftArrowButton = document.getElementById("left_arrow_button");
+            const rightArrowButton = document.getElementById("right_arrow_button");
+
+            rightArrowButton.addEventListener("click", function () {
+                currentDivIndex = (currentDivIndex + 1) % divs.length;
+                updateDisplay();
+            });
+
+            leftArrowButton.addEventListener("click", function () {
+                currentDivIndex = (currentDivIndex - 1 + divs.length) % divs.length;
+                updateDisplay();
+            });
+        });
+    </script>
+
 </body>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const A_div = document.getElementById("A_div");
-        const B_div = document.getElementById("B_div");
-        const C_div = document.getElementById("C_div");
-        const leftArrowButton = document.getElementById("left_arrow_button");
-        const rightArrowButton = document.getElementById("right_arrow_button");
-
-        rightArrowButton.addEventListener("click", function () {
-            if (A_div.style.display === "block") {
-                A_div.style.display = "none";
-                B_div.style.display = "block";
-            } else if (B_div.style.display === "block") {
-                B_div.style.display = "none";
-                C_div.style.display = "block";
-            } else if (C_div.style.display === "block") {
-                C_div.style.display = "none";
-                A_div.style.display = "block";
-            }
-        });
-
-        leftArrowButton.addEventListener("click", function () {
-            if (A_div.style.display === "block") {
-                A_div.style.display = "none";
-                C_div.style.display = "block";
-            } else if (B_div.style.display === "block") {
-                B_div.style.display = "none";
-                A_div.style.display = "block";
-            } else if (C_div.style.display === "block") {
-                C_div.style.display = "none";
-                B_div.style.display = "block";
-            }
-        });
-    });
-
-</script>
 
 </html>

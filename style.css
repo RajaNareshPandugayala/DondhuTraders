@@ -453,6 +453,11 @@ p {
 
 /***************************box01-Coin-End******************************/
 
+#parent2_div {
+    display: none;
+}
+
+
 /***********************************box01_Css-Start**********************************/
 /***********************************box01_AboutUsAndContactUs_Css-Start**********************************/
 
@@ -544,9 +549,14 @@ p {
 
 
 /***********************************box01_AboutUsAndContactUs_Css-End**********************************/
+
+
 /* .box01 {
 border: 2px solid #0A4FD5;
 } */
+.box01 {
+    padding-top: 30px;
+}
 
 .box01_right {
     display: flex;
@@ -1757,6 +1767,48 @@ form {
 
 
 @media screen and (max-width: 1310px) {
+
+
+    /***********************************box08_BOX08 BUTTON for div changing_Css-Start**********************************/
+
+    #parent2_div {
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: -25px;
+    }
+
+    #Grand_parent_div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #A_div01,
+    #A_div02 {
+        display: block;
+    }
+
+    #B_div01,
+    #B_div02,
+    #C_div01,
+    #C_div02 {
+        display: none;
+    }
+
+    .arrow-button {
+        padding: 15px;
+        background-color: #00D094;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+    /***********************************box08_BOX08 BUTTON for div changing_Css-End**********************************/
+
+
 
     /* * {
         border: 2px solid green;

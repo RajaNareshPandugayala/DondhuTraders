@@ -23,18 +23,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// Function to close the popup
+// Function to close the popup **********************************************************
 function closePopup() {
-    var popup = document.querySelector(".box01_left_video");
-    popup.style.display = "none";
-    // updateURL({ function: 'closePopup' }, 'Page Title', '/closePopup');
-}
+    var videoContainer = document.querySelector(".box01_left_video");
+    var youtubePlayer = document.getElementById("youtubePlayer");
 
+    videoContainer.style.display = "none";
+    youtubePlayer.src = "";
+}
 
 function toggleVideo() {
     var videoContainer = document.querySelector(".box01_left_video");
-    videoContainer.style.display = (videoContainer.style.display === "none" || videoContainer.style.display === "") ? "flex" : "none";
+    var youtubePlayer = document.getElementById("youtubePlayer");
+
+    if (videoContainer.style.display === "none" || videoContainer.style.display === "") {
+        videoContainer.style.display = "flex";
+        youtubePlayer.src = "https://www.youtube.com/embed/nLoja8w3vgo";
+    } else {
+        videoContainer.style.display = "none";
+        youtubePlayer.src = ""; // Pauses the video
+    }
 }
+// Function to youtube video the popup **********************************************************
+
 
 
 

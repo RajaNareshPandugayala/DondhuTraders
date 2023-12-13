@@ -456,16 +456,39 @@ p {
 /***********************************box01_Css-Start**********************************/
 /***********************************box01_AboutUsAndContactUs_Css-Start**********************************/
 
+.box_contact_us,
+.box_about_us {
+    margin-top: 20px;
+    background-image: url(about_conact_bgimage3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box_contact_us-content,
+.box_about_us-content {
+    padding: 100px 30px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-size: 45px;
+    color: whitesmoke;
+    /* border: 2px solid white; */
+}
+
 .box01_left_contact_us {
     gap: 30px;
 }
 
-.box01_boxs-content_aboutus,
 .box01_boxs-content_contactus {
     align-items: start;
     justify-content: start;
     /* border: 2px solid #0A4FD5; */
-    margin-top: 20px;
+}
+
+.youtubePlayer {
+    width: 100%;
+    height: 290px;
+    box-shadow: 0px 0px 20px gray;
 }
 
 .box01_right_contact_us-form {
@@ -573,8 +596,8 @@ border: 2px solid #0A4FD5;
 
 .close-btn_div {
     position: fixed;
-    right: 18%;
-    top: 10%;
+    right: 5%;
+    top: 5%;
     width: 35px;
     height: 35px;
     z-index: 1002;
@@ -595,9 +618,10 @@ border: 2px solid #0A4FD5;
 
 }
 
-.box01_left_video video {
+.box01_left_video iframe {
     box-shadow: 0px 0px 100px 500px #13271d;
-    width: 60%;
+    width: 80%;
+    height: 80%;
 }
 
 
@@ -1738,12 +1762,13 @@ form {
         border: 2px solid green;
     } */
 
+
+
     .box01_right_contact_us-form textarea,
     .box01_right_contact_us-form input,
     .box01_right_contact_us-form,
     .box01_right_contact_us,
     .contact_us_now_button,
-    .box01_boxs-content_aboutus,
     .box01_boxs-content_contactus {
         width: 100%;
         align-items: start;
@@ -2390,6 +2415,10 @@ form {
         border: 2px solid green;
     } */
 
+    .box01_left_video iframe {
+        height: 50%;
+    }
+
     .box {
         display: flex;
         justify-content: center;
@@ -2898,6 +2927,10 @@ form {
     /* * {
         border: 2px solid green;
     } */
+
+    .box01_left_video iframe {
+        height: 40%;
+    }
 
     .box {
         display: flex;

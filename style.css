@@ -2065,6 +2065,11 @@ form {
         animation: none;
     }
 
+    .box09_down_box {
+        animation: none;
+        width: 400px;
+    }
+
 }
 
 
@@ -3067,6 +3072,7 @@ form {
     .box05_down_box {
         width: 100%;
     }
+
 
     .wp-image-238 {
         right: 180px;

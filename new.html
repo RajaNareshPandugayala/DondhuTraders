@@ -18,48 +18,93 @@
 
         .image-container {
             display: flex;
-            width: 300px;
+            justify-content: start;
+            align-items: center;
+            width: 830px;
             /* Set the width of your container */
             overflow: hidden;
             /* Hide overflow to keep images within the container */
+            gap: 20px;
+            background-color: red;
+            margin: 100px;
+            height: 250px;
         }
 
         .image {
-            width: 100%;
+            width: 250px;
             /* Make sure images fill the container */
             display: inline-block;
             /* Display images in a row */
-            animation: slideAnimation 9s linear infinite;
+            animation: slideAnimation 10s linear infinite;
             /* Adjust the duration as needed */
         }
 
         @keyframes slideAnimation {
             0% {
-                transform: translateX(0);
+                transform: translateX(15%);
             }
 
-            33.33% {
-                transform: translateX(-100%);
+            15% {
+                transform: translateX(-110%);
             }
 
-            66.66% {
-                transform: translateX(-200%);
+
+            30% {
+                transform: translateX(-115%);
+            }
+
+
+            45% {
+                transform: translateX(-210%);
+            }
+
+            60% {
+                transform: translateX(-215%);
+            }
+
+            75% {
+                transform: translateX(-310%);
+            }
+
+            90% {
+                transform: translateX(-315%);
             }
 
             100% {
-                transform: translateX(0);
+                transform: translateX(-315%);
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="image-container" style="background-color: red; margin: 100px; padding: 50px;">
-        <img src="imageA.jpg" alt="Image A" class="image" />
-        <img src="imageB.jpg" alt="Image B" class="image" />
-        <img src="imageC.jpg" alt="Image C" class="image" />
+    <div class="image-container">
+        <img src="NaveenDhodhu.jpeg" alt="Image A" class="image" />
+        <img src="NaveenDhodhu-2.png" alt="Image B" class="image" />
+        <img src="DonthuTradersLogo.png" alt="Image C" class="image" />
+        <img src="NaveenDhodhu.jpeg" alt="Image c" class="image" />
+        <img src="NaveenDhodhu-2.png" alt="Image B" class="image" />
+        <img src="DonthuTradersLogo.png" alt="Image C" class="image" />
     </div>
 
+    <br><br><br>
+
+    <!-- <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-329" method="post" action="mailto:recipient@example.com">
+        <input type="email" class="form-control form-control--style2 mb-3 mb-sm-0" name="EMAIL"
+            placeholder="Email Address" required />
+        <button class="trk-btn--large trk-btn--secondary2" type="submit">Submit</button>
+    </form> -->
+
+
+
+    <form id="emailForm" class="mc4wp-form mc4wp-form-329" method="post">
+        <input type="email" class="form-control form-control--style2 mb-3 mb-sm-0" name="EMAIL"
+            placeholder="Email Address" required />
+        <button class="trk-btn--large trk-btn--secondary2" type="button" onclick="sendEmail()">Submit</button>
+    </form>
+
+
 </body>
+
 
 </html>

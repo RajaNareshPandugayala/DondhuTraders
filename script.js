@@ -47,31 +47,40 @@ function toggleVideo() {
 // Function to youtube video the popup **********************************************************
 
 
-// Function to BOX08 BUTTON for div changing **********************************************************
-// document.addEventListener("DOMContentLoaded", function () {
-//     const divs = ["A_div01", "B_div01", "C_div01"];
-//     let currentDivIndex = 0;
 
-//     const updateDisplay = () => {
-//         divs.forEach((divId, index) => {
-//             const displayStyle = index === currentDivIndex ? "block" : "none";
-//             document.getElementById(divId).style.display = displayStyle;
-//         });
-//     };
+document.addEventListener('DOMContentLoaded', function () {
+    var boxes = document.querySelectorAll('.box09_down_box');
+    boxes.forEach(function (box) {
+        box.addEventListener('mouseenter', function () {
+            boxes.forEach(function (otherBox) {
+                otherBox.classList.add('frozen');
+            });
+        });
 
-//     const leftArrowButton = document.getElementById("left_arrow_button01");
-//     const rightArrowButton = document.getElementById("right_arrow_button01");
+        box.addEventListener('mouseleave', function () {
+            boxes.forEach(function (otherBox) {
+                otherBox.classList.remove('frozen');
+            });
+        });
+    });
+});
 
-//     rightArrowButton.addEventListener("click", function () {
-//         currentDivIndex = (currentDivIndex + 1) % divs.length;
-//         updateDisplay();
-//     });
+document.addEventListener('DOMContentLoaded', function () {
+    var boxes = document.querySelectorAll('.box08_down_box');
+    boxes.forEach(function (box) {
+        box.addEventListener('mouseenter', function () {
+            boxes.forEach(function (otherBox) {
+                otherBox.classList.add('frozen');
+            });
+        });
 
-//     leftArrowButton.addEventListener("click", function () {
-//         currentDivIndex = (currentDivIndex - 1 + divs.length) % divs.length;
-//         updateDisplay();
-//     });
-// });
+        box.addEventListener('mouseleave', function () {
+            boxes.forEach(function (otherBox) {
+                otherBox.classList.remove('frozen');
+            });
+        });
+    });
+});
 
 
 

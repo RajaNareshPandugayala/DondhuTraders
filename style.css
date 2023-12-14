@@ -453,18 +453,13 @@ p {
 
 /***************************box01-Coin-End******************************/
 
-#parent2_div {
-    display: none;
-}
-
-
 /***********************************box01_Css-Start**********************************/
 /***********************************box01_AboutUsAndContactUs_Css-Start**********************************/
 
 .box_contact_us,
 .box_about_us {
     margin-top: 20px;
-    background-image: url(about_conact_bgimage.jpg);
+    background-image: url(about_conact_bgimage2a.png);
     background-size: cover;
     background-position: center;
 }
@@ -685,6 +680,30 @@ border: 2px solid #0A4FD5;
 
 /***********************************box01_Css-End**********************************/
 
+#parent2_div {
+    display: none;
+}
+
+.box01_right_naveen {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00D094;
+    padding: 0;
+    border-radius: 0.5cm;
+}
+
+.box01_right_naveen img {
+    width: 500px;
+    /* border: 2px solid green; */
+    animation: none;
+    border-radius: 0.5cm;
+}
+
+.box01_left_naveen_text {
+    gap: 15px;
+}
 
 /***********************************box02_Css-Start**********************************/
 .box02 {
@@ -2696,6 +2715,11 @@ form {
         display: none;
     }
 
+    .box01_right_naveen,
+    .box01_right_naveen img {
+        width: 500px;
+    }
+
 }
 
 @media screen and (max-width: 610px) {
@@ -2970,6 +2994,11 @@ form {
 
     .box03 {
         display: none;
+    }
+
+    .box01_right_naveen,
+    .box01_right_naveen img {
+        width: 400px;
     }
 
 }
@@ -3283,6 +3312,12 @@ form {
 
     .box03 {
         display: none;
+    }
+
+    .box01_right_naveen,
+    .box01_right_naveen img {
+        animation: none;
+        width: 100%;
     }
 
 }
@@ -3605,6 +3640,12 @@ form {
 
     .box03 {
         display: none;
+    }
+
+    .box01_right_naveen,
+    .box01_right_naveen img {
+        animation: none;
+        width: 100%;
     }
 
 }

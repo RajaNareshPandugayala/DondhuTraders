@@ -1923,6 +1923,17 @@ form {
         cursor: pointer;
     }
 
+
+    .box08_down_box {
+        animation: none;
+    }
+
+    .box09_down_box {
+        animation: none;
+        width: 550px;
+
+    }
+
     /***********************************box08_BOX08 BUTTON for div changing_Css-End**********************************/
 
 
@@ -2059,15 +2070,6 @@ form {
 
     .box03 {
         display: none;
-    }
-
-    .box08_down_box {
-        animation: none;
-    }
-
-    .box09_down_box {
-        animation: none;
-        width: 400px;
     }
 
 }
@@ -2794,7 +2796,7 @@ form {
     .box09_down_box,
     .footer_top_left,
     .box05_down_box {
-        width: 100%;
+        min-width: 100%;
     }
 
     .wp-image-238 {

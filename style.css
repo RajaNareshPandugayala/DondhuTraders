@@ -459,9 +459,11 @@ p {
 .box_contact_us,
 .box_about_us {
     margin-top: 20px;
-    background-image: url(about_conact_bgimage2a.png);
-    background-size: cover;
-    background-position: center;
+    background-image: url(vecteezy_3d-bar-chart-illustration_17392497.png);
+    background-position: 75%;
+    background-color: black;
+    background-size: 230px;
+    background-repeat: no-repeat;
 }
 
 .box_contact_us-content,
@@ -979,6 +981,7 @@ border: 2px solid #0A4FD5;
 .box05 {
     flex-direction: column;
     gap: 50px;
+    /* border: 1px solid red; */
 }
 
 .box05b {
@@ -1028,19 +1031,19 @@ border: 2px solid #0A4FD5;
     flex-direction: column;
     justify-content: end;
     align-items: center;
-    gap: 280px;
+    gap: 320px;
     /* border: 2px solid #18ffbe; */
-    height: 1725px;
+    height: 1220px;
 }
 
 .box05_middle {
-    height: 1725px;
+    height: 1220px;
     background-color: #EDF2F8;
     border-radius: 0.7cm;
 }
 
 .box05_middle_top {
-    height: 850px;
+    height: 610px;
     width: 10px;
     background-color: #00D094;
     border-radius: 0.7cm;
@@ -1052,9 +1055,9 @@ border: 2px solid #0A4FD5;
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    gap: 280px;
-    /* border: 2px solid #18ffbe; */
-    height: 1725px;
+    gap: 320px;
+    height: 1220px;
+    /* border: 2px solid #18ffbe;*/
 }
 
 .box05_down_box-content {

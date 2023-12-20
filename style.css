@@ -25,6 +25,10 @@ a {
     color: black;
 }
 
+a:hover {
+    font-weight: bold;
+}
+
 p {
     color: black;
 }
@@ -331,7 +335,7 @@ p {
     justify-content: start;
     align-items: center;
     text-align: center;
-    width: 200px;
+    width: 210px;
     gap: 4px;
     /* border: 1px solid green; */
 }
@@ -456,13 +460,17 @@ p {
 /***********************************box01_Css-Start**********************************/
 /***********************************box01_AboutUsAndContactUs_Css-Start**********************************/
 
+#home {
+    padding-top: 1px;
+}
+
 .box_contact_us,
 .box_about_us {
     margin-top: 20px;
     background-image: url(vecteezy_3d-bar-chart-illustration_17392497.png);
     background-position: 75%;
     background-color: black;
-    background-size: 230px;
+    background-size: 180px;
     background-repeat: no-repeat;
 }
 
@@ -477,9 +485,9 @@ p {
     /* border: 2px solid white; */
 }
 
-.box01_left_contact_us {
+/* .box01_left_contact_us {
     gap: 30px;
-}
+} */
 
 .box01_boxs-content_contactus {
     align-items: start;
@@ -1532,6 +1540,7 @@ border: 2px solid #0A4FD5;
 /***********************************box09_Css-End**********************************/
 /***********************************box10_Css-Start**********************************/
 .box10 {
+    padding-top: 140px;
     flex-direction: column;
     gap: 50px;
 }

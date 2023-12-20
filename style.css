@@ -1317,17 +1317,19 @@ border: 2px solid #0A4FD5;
 
 .box08_down_box {
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    /* border: 2px solid red; */
     /* width: 650px; */
     border: 2px solid transparent;
     margin-bottom: 30px;
     width: 380px;
-    padding: 30px;
+    padding: 40px;
     border-radius: 0.5cm;
     background-color: white;
     /* gap: 20px; */
     animation: slideAnimation 15s linear infinite;
+    /* border: 2px solid red; */
 }
 
 @keyframes slideAnimation {

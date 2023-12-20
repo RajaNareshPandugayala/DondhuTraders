@@ -438,7 +438,7 @@ moon.addEventListener('click', () => {
 
     icon.src = theme === 'light' ? 'sun.svg' : 'moon.svg';
     moon.style.backgroundColor = theme === 'light' ? 'white' : '#00D094';
-    body.style.backgroundColor = theme === 'light' ? 'black' : 'whitesmoke';
+    body.style.backgroundColor = theme === 'light' ? '#001010' : 'whitesmoke';
     body.style.color = theme === 'light' ? 'white' : 'black';
 
 
@@ -446,12 +446,12 @@ moon.addEventListener('click', () => {
 
     // Access elements by index
     for (let i = 0; i < header.length; i++) {
-        header[i].style.backgroundColor = theme === 'light' ? 'black' : 'whitesmoke';
+        header[i].style.backgroundColor = theme === 'light' ? '#001010' : 'whitesmoke';
 
     }
 
     for (let i = 0; i < sticky_header.length; i++) {
-        sticky_header[i].style.backgroundColor = theme === 'light' ? 'black' : 'whitesmoke';
+        sticky_header[i].style.backgroundColor = theme === 'light' ? '#001010' : 'whitesmoke';
 
     }
 

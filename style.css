@@ -337,13 +337,12 @@ p {
     text-align: center;
     width: 210px;
     gap: 4px;
-    /* border: 1px solid green; */
 }
 
 .header_logotext_content {
     display: flex;
     flex-direction: column;
-    font-weight: bolder;
+    font-weight: bold;
     text-transform: capitalize;
     font-family: "Anek Telugu", sans-serif;
     font-size: 15px;
@@ -364,6 +363,8 @@ p {
 .header_main-menu_ul li {
     list-style-type: none;
     display: block;
+    /* border: 1px solid red; */
+    width: 90px;
 }
 
 .header_sub-menu_ul {
@@ -1704,6 +1705,7 @@ form {
 
 .footer_box li {
     list-style-type: none;
+    width: 155px;
 }
 
 .footer_boxs-content {
@@ -1756,10 +1758,11 @@ form {
 
 .footer_logotext_constent {
     color: white;
-    font-weight: bolder;
+    font-weight: bold;
     text-transform: capitalize;
     font-family: "Anek Telugu", sans-serif;
     font-size: 14px;
+    /* border: 1px solid green; */
 }
 
 .footer_top_left_para {

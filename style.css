@@ -291,11 +291,11 @@ p {
 
 .box_boxs-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     /* border: red solid 1px; */
     width: 1150px;
-    gap: 50px;
+    /* gap: 50px; */
 }
 
 /***********************************Common_box-End**********************************/
@@ -1211,6 +1211,7 @@ border: 2px solid #0A4FD5;
 }
 
 .box07_boxs-content {
+    justify-content: center;
     text-align: center;
     flex-wrap: wrap;
     gap: 50px;
@@ -1316,12 +1317,12 @@ border: 2px solid #0A4FD5;
 }
 
 .box08_boxs-content {
-    gap: 20px;
+    gap: 33px;
     justify-content: start;
     flex-wrap: nowrap;
     overflow: hidden;
     /* overflow: hidden; it is for iframe look*/
-    /* border: 2px solid red; */
+    /* border: 1px solid red; */
 }
 
 .box08_down_box {
@@ -1332,8 +1333,8 @@ border: 2px solid #0A4FD5;
     /* width: 650px; */
     border: 2px solid transparent;
     margin-bottom: 30px;
-    width: 380px;
-    padding: 40px;
+    width: 355px;
+    padding: 28px;
     border-radius: 0.5cm;
     background-color: white;
     /* gap: 20px; */
@@ -1347,29 +1348,29 @@ border: 2px solid #0A4FD5;
     }
 
     17.5% {
-        transform: translateX(-100%);
+        transform: translateX(-107%);
     }
 
 
     35% {
-        transform: translateX(-100%);
+        transform: translateX(-107%);
     }
 
 
     52.5% {
-        transform: translateX(-206%);
+        transform: translateX(-216%);
     }
 
     70% {
-        transform: translateX(-206%);
+        transform: translateX(-216%);
     }
 
     87.5% {
-        transform: translateX(-316%);
+        transform: translateX(-325%);
     }
 
     100% {
-        transform: translateX(-316%);
+        transform: translateX(-325%);
     }
 }
 
@@ -1469,7 +1470,7 @@ border: 2px solid #0A4FD5;
 }
 
 .box09_boxs-content {
-    gap: 20px;
+    gap: 27px;
     justify-content: start;
     /* flex-wrap: nowrap; */
     overflow: hidden;
@@ -1501,33 +1502,33 @@ border: 2px solid #0A4FD5;
 
 @keyframes slideAnimation02 {
     0% {
-        transform: translateX(1%);
+        transform: translateX(0%);
     }
 
     17.5% {
-        transform: translateX(-102%);
+        transform: translateX(-103%);
     }
 
 
     35% {
-        transform: translateX(-102%);
+        transform: translateX(-103%);
     }
 
 
     52.5% {
-        transform: translateX(-205%);
+        transform: translateX(-208%);
     }
 
     70% {
-        transform: translateX(-205%);
+        transform: translateX(-208%);
     }
 
     87.5% {
-        transform: translateX(-310%);
+        transform: translateX(-313%);
     }
 
     100% {
-        transform: translateX(-310%);
+        transform: translateX(-313%);
     }
 }
 
@@ -1673,6 +1674,8 @@ border: 2px solid #0A4FD5;
 }
 
 .box11_boxs-content {
+    justify-content: center;
+    gap: 50px;
     background-color: #00D094;
     border-radius: 0.5cm;
     padding: 50px;
@@ -1734,6 +1737,7 @@ form {
 }
 
 .footer_boxs-content {
+    gap: 20px;
     flex-direction: column;
     /* width: 1100px; */
     /* border: 2px solid #0A4FD5; */
@@ -1747,10 +1751,10 @@ form {
 
 .footer_top {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     /* border: 2px solid red; */
-    gap: 50px;
+    gap: 100px;
     width: 100%;
 }
 
@@ -1847,7 +1851,7 @@ form {
 
 .footer_top_right {
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: space-between;
     /* border: 2px solid yellow; */
     width: 100%;
@@ -1858,6 +1862,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 103px;
     /* border: 2px solid greenyellow; */
 }
 

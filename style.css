@@ -11,7 +11,8 @@ body {
     font-family: "Anek Telugu", sans-serif;
     /* overflow-x: hidden; */
     /* overflow-y: hidden; */
-    background-color: whitesmoke;
+    background: linear-gradient(to right, transparent, whitesmoke 80%, transparent);
+    /* background-color: whitesmoke; */
     /* background-color: #001010; */
     scroll-behavior: smooth;
 }
@@ -471,7 +472,7 @@ p {
     margin-top: 20px;
     background-image: url(vecteezy_3d-bar-chart-illustration_17392497.png);
     background-position: 75%;
-    background-color: black;
+    background-color: #13271d;
     background-size: 180px;
     background-repeat: no-repeat;
 }
@@ -577,6 +578,7 @@ border: 2px solid #0A4FD5;
     width: 350px;
     /* border: 2px solid green; */
     animation: moveLeftToRight 3.5s linear infinite alternate;
+    /* background: linear-gradient(to bottom, transparent 10%, whitesmoke); */
 }
 
 
@@ -930,9 +932,9 @@ border: 2px solid #0A4FD5;
     height: 330px;
     border-radius: 0.5cm;
     transition: transform 0.2s ease;
-    border: 2px solid transparent;
-    background-color: #EDF2F8;
-    /* background: linear-gradient(to left, #EDF2F8, black); */
+    border: linear-gradient(to top, #EDF3F8, transparent) 2px solid;
+    /* background-color: #EDF2F8; */
+    background: linear-gradient(to top, #EDF3F8, transparent);
     padding: 30px;
 }
 
@@ -1019,8 +1021,15 @@ border: 2px solid #0A4FD5;
     width: 470px;
     border-radius: 0.3cm;
     padding: 50px;
-    background-color: #EDF2F8;
     /* border: 2px solid red; */
+}
+
+.box05_down_box-left {
+    background: linear-gradient(to left, #EDF2F8, transparent);
+}
+
+.box05_down_box-right {
+    background: linear-gradient(to right, #EDF2F8, transparent);
 }
 
 
@@ -1071,7 +1080,7 @@ border: 2px solid #0A4FD5;
     align-items: center;
     gap: 320px;
     height: 1220px;
-    /* border: 2px solid #18ffbe;*/
+    /* border: 2px solid #18ffbe; */
 }
 
 .box05_down_box-content {

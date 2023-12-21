@@ -479,7 +479,7 @@ p {
 
 .box_contact_us-content,
 .box_about_us-content {
-    padding: 100px 30px;
+    padding: 100px 0px;
     display: flex;
     justify-content: start;
     align-items: start;

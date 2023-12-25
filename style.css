@@ -1340,6 +1340,12 @@ border: 2px solid #0A4FD5;
     /* gap: 20px; */
     animation: slideAnimation 15s linear infinite;
     /* border: 2px solid red; */
+    cursor: grab;
+    position: relative;
+}
+
+.box08_down_box:active {
+    cursor: grabbing;
 }
 
 @keyframes slideAnimation {
@@ -1497,8 +1503,12 @@ border: 2px solid #0A4FD5;
     /* gap: 20px; */
     animation: slideAnimation02 20s linear infinite;
     /* border: 2px solid orange; */
+    cursor: grab;
 }
 
+.box09_down_box:active {
+    cursor: grabbing;
+}
 
 @keyframes slideAnimation02 {
     0% {

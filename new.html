@@ -5,106 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Image Animation</title>
+    <script defer src="script.js"></script>
+    <title>Draggable Div</title>
 
     <style>
-        body,
-        html {
+        body {
             margin: 0;
-            padding: 0;
-            height: 100%;
             overflow: hidden;
         }
 
-        .image-container {
-            display: flex;
-            justify-content: start;
-            align-items: center;
-            width: 830px;
-            /* Set the width of your container */
-            overflow: hidden;
-            /* Hide overflow to keep images within the container */
+        .box08_down_box {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: grab;
             gap: 20px;
-            background-color: red;
-            margin: 100px;
-            height: 250px;
+            /* transition: all 0.3s ease; */
         }
 
-        .image {
-            width: 250px;
-            /* Make sure images fill the container */
-            display: inline-block;
-            /* Display images in a row */
-            animation: slideAnimation 10s linear infinite;
-            /* Adjust the duration as needed */
-        }
-
-        @keyframes slideAnimation {
-            0% {
-                transform: translateX(15%);
-            }
-
-            15% {
-                transform: translateX(-110%);
-            }
-
-
-            30% {
-                transform: translateX(-115%);
-            }
-
-
-            45% {
-                transform: translateX(-210%);
-            }
-
-            60% {
-                transform: translateX(-215%);
-            }
-
-            75% {
-                transform: translateX(-310%);
-            }
-
-            90% {
-                transform: translateX(-315%);
-            }
-
-            100% {
-                transform: translateX(-315%);
-            }
+        .box08_down_box:active {
+            cursor: grabbing;
+            /* transition: none; */
         }
     </style>
 </head>
 
+
+
 <body>
-    <div class="image-container">
-        <img src="NaveenDhodhu.jpeg" alt="Image A" class="image" />
-        <img src="NaveenDhodhu-2.png" alt="Image B" class="image" />
-        <img src="DonthuTradersLogo.png" alt="Image C" class="image" />
-        <img src="NaveenDhodhu.jpeg" alt="Image c" class="image" />
-        <img src="NaveenDhodhu-2.png" alt="Image B" class="image" />
-        <img src="DonthuTradersLogo.png" alt="Image C" class="image" />
-    </div>
-
-    <br><br><br>
-
-    <!-- <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-329" method="post" action="mailto:recipient@example.com">
-        <input type="email" class="form-control form-control--style2 mb-3 mb-sm-0" name="EMAIL"
-            placeholder="Email Address" required />
-        <button class="trk-btn--large trk-btn--secondary2" type="submit">Submit</button>
-    </form> -->
-
-
-
-    <form id="emailForm" class="mc4wp-form mc4wp-form-329" method="post">
-        <input type="email" class="form-control form-control--style2 mb-3 mb-sm-0" name="EMAIL"
-            placeholder="Email Address" required />
-        <button class="trk-btn--large trk-btn--secondary2" type="button" onclick="sendEmail()">Submit</button>
-    </form>
-
-
+    <div class="box08_down_box"></div>
 </body>
 
+<script>
+    let isDragging = false;
+    let offsetX, offsetY;
+
+    const box = document.querySelector('.box08_down_box');
+
+    box.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        offsetX = e.clientX - box.getBoundingClientRect().left;
+        // offsetY = e.clientY - box.getBoundingClientRect().top;
+        box.style.transition = 'none';
+    });
+
+    document.addEventListener('mousemove', (e) => {
+        if (isDragging) {
+            const x = e.clientX - offsetX;
+            // const y = e.clientY - offsetY;
+            box.style.left = `${x}px`;
+            // box.style.top = `${y}px`;
+        }
+    });
+
+    document.addEventListener('mouseup', () => {
+        isDragging = false;
+        box.style.transition = 'all 0.3s ease';
+    });
+
+</script>
 
 </html>

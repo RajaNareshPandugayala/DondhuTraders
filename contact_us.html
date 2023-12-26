@@ -141,14 +141,21 @@
                     </div>
                 </div>
                 <div class="box01_right box01_right_contact_us">
-                    <form class="box01_right_contact_us-form" method="post">
+                    <form class="box01_right_contact_us-form" target="_self"
+                        action="https://formsubmit.co/rajanaresh.p@gmail.com" method="POST"
+                        onsubmit="updateSubjectContactUs()">
+                        <input type="hidden" name="_subject" id="subject" value="Contact Us - ">
+                        <!-- <input type="hidden" name="_cc" value="srinivasvadde@email.com, sudhakar.fu@gmail.com"> -->
+                        <input type="hidden" name="_template" value="table">
                         <label for="name">Name</label>
                         <input type="text" placeholder="Full Name" id="name" name="name" autocomplete="true" required>
                         <label for="email">Email</label>
                         <input type="email" placeholder="Email Address" id="email" name="email" autocomplete="true"
                             required>
                         <label for="textarea">Message</label>
-                        <textarea cols="10" rows="17" placeholder="Enter Your Message" id="textarea"></textarea>
+                        <textarea rows="17" placeholder="Enter Your Message" id="textarea" required></textarea>
+                        <input type="text" placeholder="message" id="message" name="message" autocomplete="true"
+                            style="display: none;">
                         <button class="contact_us_now_button" type="submit">Contact US Now</button>
                     </form>
                 </div>

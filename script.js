@@ -756,3 +756,17 @@ accordionHeader06.addEventListener('click', () => {
 
 
 /******************************************************************** */
+function updateSubjectContactUs() {
+    var textareaValue = document.getElementById("textarea").value;
+    var messageField = document.getElementById("message");
+    messageField.value = textareaValue;
+    var nameValue = document.getElementById("name").value;
+    var subjectField = document.getElementById("subject");
+    subjectField.value = "Contact Us - " + nameValue;
+}
+
+// function updateSubjectSubscribe() {
+//     var emailValue = document.getElementById("email").value;
+//     var subjectField = document.getElementById("subject");
+//     subjectField.value = "Subscribe - " + emailValue;
+// }

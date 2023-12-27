@@ -12,6 +12,8 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 
 
@@ -122,14 +124,16 @@
                     <p class="box_content box01_left_content para">
                         xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx. xxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
                         xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
-                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
                         xxxxxxxxxxx, xxx xxxx
                         xxxxxx. xxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxxxxx xxxxxxxxxxxx x xxxxxxxxxxxxx xxxxxxx,
                         xxxxxxxxxx, xxx xxxxxxxx xxxxxx.
                         <br><br>
                         xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx. xxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
                         xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx.
-                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
+                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx,
                         xxxxxxxxxxx, xxx xxxx
                         xxxxxx. xxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxx xxxxxxxxx xxxxxxxxxxxx x xxxxxxxxxxxxx xxxxxxx,
                         xxxxxxxxxx, xxx xxxxxxxx
@@ -166,11 +170,41 @@
                             onourupdates? Subscribe to our news nowandstay in the loop!</p>
                     </div>
                     <div class="elementor-element-50c820d">
-                        <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-329" method="post"><input type="email"
-                                class="form-control form-control--style2 mb-3 mb-sm-0" name="EMAIL"
-                                placeholder="Email Address" required /><button
+                        <!-- <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-329"
+                            action="https://formsubmit.co/rajanaresh.p@gmail.com" method="POST"
+                            onsubmit="updateSubjectSubscribe()">
+                            <input type="hidden" name="_cc" value="srinivasvadde@email.com, sudhakar.fu@gmail.com">
+                            <input type="hidden" name="_subject" id="subject" value="Customer Request for Subscription">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_next" value="https://google.com">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="email" class="form-control form-control--style2 mb-3 mb-sm-0" name="EMAIL"
+                                id="email" placeholder="Email Address" required /><button
+                                class="trk-btn--large trk-btn--secondary2" type="submit">Submit</button>
+                        </form> -->
+                        <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-329">
+                            <input type="email" class="form-control form-control--style2 mb-3 mb-sm-0" name="EMAIL"
+                                id="email" placeholder="Email Address" required /><button
                                 class="trk-btn--large trk-btn--secondary2" type="submit">Submit</button>
                         </form>
+                        <script>
+                            $("#mc4wp-form-1").submit((e) => {
+                                e.preventDefault()
+                                $.ajax({
+                                    url: "https://script.google.com/macros/s/AKfycbykmi1HYY4SWh3NJCMZ5qjWXPBMbtVe0x5_Xl25q1czmY01hlV5_j3NoCpjLLbMSEF0EA/exec",
+                                    data: $("#smc4wp-form-1").serialize(),
+                                    method: "post",
+                                    success: function (response) {
+                                        alert("you have been subscribed successfully!")
+                                        window.location.reload()
+                                    },
+                                    error: function (err) {
+                                        alert("Something Error")
+
+                                    }
+                                })
+                            })
+                        </script>
                     </div>
                 </div>
             </div>

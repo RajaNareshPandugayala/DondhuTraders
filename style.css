@@ -494,7 +494,7 @@ p {
 
 .box01_boxs-content_contactus {
     align-items: start;
-    justify-content: start;
+    justify-content: space-between;
     /* border: 2px solid #0A4FD5; */
 }
 
@@ -721,6 +721,7 @@ border: 2px solid #0A4FD5;
 
 .box01_left_naveen_text {
     gap: 15px;
+    /* border: 1px solid red; */
 }
 
 /***********************************box02_Css-Start**********************************/

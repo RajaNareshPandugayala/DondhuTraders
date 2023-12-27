@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Document</title>
+</head>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>Swing by for a cup of coffee, or leave us a message:</p>
+  </div>
+  <div class="row">
+
+    <div class="column">
+      <form id="submit-form">
+        <label for="fname">First Name</label>
+        <label for="lname">Email</label>
+        <input type="text" id="lname" name="email" placeholder="Your last name..">
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <div class="column">
+      <img src="crossroads.png" style="width:100%">
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $("#submit-form").submit((e) => {
+    e.preventDefault()
+    $.ajax({
+      url: "https://script.google.com/macros/s/AKfycbykmi1HYY4SWh3NJCMZ5qjWXPBMbtVe0x5_Xl25q1czmY01hlV5_j3NoCpjLLbMSEF0EA/exec",
+      data: $("#submit-form").serialize(),
+      method: "post",
+      success: function (response) {
+        alert("you have been subscribed successfully!")
+        window.location.reload()
+      },
+      error: function (err) {
+        alert("Something Error")
+
+      }
+    })
+  })
+</script>

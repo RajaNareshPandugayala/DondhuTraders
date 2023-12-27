@@ -763,10 +763,23 @@ function updateSubjectContactUs() {
     var nameValue = document.getElementById("name").value;
     var subjectField = document.getElementById("subject");
     subjectField.value = "Contact Us - " + nameValue;
+
+
+    alert("Your request has been sent successfully!")
+
+    var currentUrl = window.location.href;
+    document.getElementsByName('_next')[0].value = currentUrl;
+    // window.location.reload()
 }
 
+
 // function updateSubjectSubscribe() {
-//     var emailValue = document.getElementById("email").value;
 //     var subjectField = document.getElementById("subject");
-//     subjectField.value = "Subscribe - " + emailValue;
+//     subjectField.value = "Customer Request for Subscription";
+
+//     alert("you have been subscribed successfully!")
+
+//     var currentUrl = window.location.href;
+//     document.getElementsByName('_next')[0].value = currentUrl;
 // }
+/******************************************************************** */

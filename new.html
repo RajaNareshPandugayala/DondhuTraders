@@ -1,72 +1,112 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .parent-div {
+            width: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .image-container {
+            display: flex;
+            animation: moveImages 5s linear infinite;
+        }
+
+        .image {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            margin-right: 10px;
+            cursor: grabbing;
+        }
+
+        @keyframes moveImages {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent-div">
+        <div class="image-container">
+            <div class="image" id="image1"></div>
+            <div class="image" id="image2"></div>
+            <div class="image" id="image3"></div>
+            <div class="image" id="image4"></div>
+            <div class="image" id="image5"></div>
+            <div class="image" id="image6"></div>
+        </div>
+    </div>
+
+    <script>
+        let isDragging = false;
+        let initialX;
+
+        document.querySelectorAll('.image').forEach(image => {
+            image.addEventListener('mousedown', (event) => {
+                isDragging = true;
+                initialX = event.clientX;
+                image.style.cursor = 'grabbing';
+            });
+
+            document.addEventListener('mousemove', (event) => {
+                if (isDragging) {
+                    const deltaX = event.clientX - initialX;
+                    const currentTransform = getComputedStyle(image).transform;
+                    const currentTranslateX = currentTransform ? parseInt(currentTransform.split(',')[4]) : 0;
+                    const newTranslateX = currentTranslateX + deltaX;
+
+                    image.style.transform = `translateX(${newTranslateX}px)`;
+                    initialX = event.clientX;
+                }
+            });
+
+            document.addEventListener('mouseup', () => {
+                isDragging = false;
+                image.style.cursor = 'grab';
+            });
+        });
+    </script>
+</body>
+
+</html> -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-    <title>Draggable Div</title>
-
+    <title>WhatsApp Chat</title>
     <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-        }
-
-        .box08_down_box {
-            width: 100px;
-            height: 100px;
-            background-color: #3498db;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            cursor: grab;
-            gap: 20px;
-            /* transition: all 0.3s ease; */
-        }
-
-        .box08_down_box:active {
-            cursor: grabbing;
-            /* transition: none; */
-        }
+        /* Add your custom styles here */
     </style>
 </head>
 
-
-
 <body>
-    <div class="box08_down_box"></div>
+
+    <button id="whatsapp-chat">Start WhatsApp Chat</button>
+
+    <script>
+        document.getElementById("whatsapp-chat").addEventListener("click", function () {
+            // Replace '123456789' with your actual WhatsApp number
+            var phoneNumber = '8904613800';
+
+            // Open WhatsApp chat with the specified number
+            window.open('https://api.whatsapp.com/send?phone=' + phoneNumber, '_blank');
+        });
+    </script>
+
 </body>
-
-<script>
-    let isDragging = false;
-    let offsetX, offsetY;
-
-    const box = document.querySelector('.box08_down_box');
-
-    box.addEventListener('mousedown', (e) => {
-        isDragging = true;
-        offsetX = e.clientX - box.getBoundingClientRect().left;
-        // offsetY = e.clientY - box.getBoundingClientRect().top;
-        box.style.transition = 'none';
-    });
-
-    document.addEventListener('mousemove', (e) => {
-        if (isDragging) {
-            const x = e.clientX - offsetX;
-            // const y = e.clientY - offsetY;
-            box.style.left = `${x}px`;
-            // box.style.top = `${y}px`;
-        }
-    });
-
-    document.addEventListener('mouseup', () => {
-        isDragging = false;
-        box.style.transition = 'all 0.3s ease';
-    });
-
-</script>
 
 </html>

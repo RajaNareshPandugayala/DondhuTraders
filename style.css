@@ -8,7 +8,9 @@
 body {
     /* font-family: 'Segoe UI', Roboto; */
     /* font-family: Arial, sans-serif; */
-    font-family: "Anek Telugu", sans-serif;
+    /* font-family: "Anek Telugu", sans-serif; */
+    font-family: Menlo, Consolas, monaco, monospace;
+    font-family: Poppins;
     /* overflow-x: hidden; */
     /* overflow-y: hidden; */
     background: linear-gradient(to right, transparent, whitesmoke 80%, transparent);
@@ -346,7 +348,7 @@ p {
     flex-direction: column;
     font-weight: bold;
     text-transform: capitalize;
-    font-family: "Anek Telugu", sans-serif;
+    /* font-family: "Anek Telugu", sans-serif; */
     font-size: 15px;
     text-shadow: 0px 0px 50px green;
 }
@@ -355,9 +357,10 @@ p {
 
 .header_main-menu_ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     width: 650px;
+    font-size: 18px;
     /* border: 2px solid red; */
 }
 
@@ -1121,6 +1124,7 @@ border: 2px solid #0A4FD5;
     gap: 30px;
     flex-wrap: wrap;
     list-style-type: none;
+    /* border: 2px solid red; */
 }
 
 
@@ -1164,11 +1168,14 @@ border: 2px solid #0A4FD5;
 }
 
 .box06_down_box-content h6 {
-    font-size: 18px;
+    font-size: 22px;
+    /* border: 1px solid red; */
+    /* text-transform: capitalize; */
+
 }
 
 .box06_down_box-content h3 {
-    font-size: 28px;
+    font-size: 25px;
     color: #0A4FD5;
     /* border: 2px solid red; */
 }
@@ -1182,6 +1189,7 @@ border: 2px solid #0A4FD5;
     display: flex;
     flex-direction: column;
     gap: 10px;
+
 }
 
 .box06_down_box-list {
@@ -1194,6 +1202,7 @@ border: 2px solid #0A4FD5;
     display: flex;
     align-items: center;
     gap: 5px;
+    font-size: 18px;
 }
 
 /***********************************box06_Css-End**********************************/
@@ -1929,6 +1938,7 @@ form {
 
 .para {
     color: black;
+    font-size: 20px;
 }
 
 /***********************************footer_Css-End**********************************/

@@ -931,6 +931,7 @@ border: 2px solid #0A4FD5;
 .box04_boxs-content {
     gap: 30px;
     flex-wrap: wrap;
+    justify-content: center;
     /* border: 2px solid blue; */
 }
 
@@ -949,6 +950,7 @@ border: 2px solid #0A4FD5;
     /* background-color: #EDF2F8; */
     background: linear-gradient(to top, #EDF3F8, transparent);
     padding: 30px;
+    border: 2px solid transparent;
 }
 
 .box04_down_box:hover {

@@ -328,19 +328,20 @@ p {
 
 .header_logo img {
     border-radius: 50%;
-    width: 75px;
+    width: 80px;
     /* box-shadow: 0px 0px 100px 0px green; */
-    margin-top: 5px;
+    /* margin-top: 5px; */
 }
 
 .header_logotext {
     display: flex;
-    /* flex-direction: column; */
-    justify-content: start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    width: 210px;
-    gap: 4px;
+    /* width: 210px; */
+    /* gap: 4px; */
+    /* border: 2px solid red; */
 }
 
 .header_logotext_content {
@@ -348,9 +349,13 @@ p {
     flex-direction: column;
     font-weight: bold;
     text-transform: capitalize;
-    /* font-family: "Anek Telugu", sans-serif; */
-    font-size: 15px;
+    font-family: "Anek Telugu", sans-serif;
+    font-size: 11px;
     text-shadow: 0px 0px 50px green;
+    color: rgb(2, 157, 2);
+    letter-spacing: 0.5px;
+    /* border: 2px solid red; */
+    margin-top: -6px;
 }
 
 
@@ -1275,14 +1280,14 @@ border: 2px solid #0A4FD5;
     position: relative;
     left: 5px;
     right: 5px;
-    bottom: 110px;
+    bottom: 100px;
     background-color: whitesmoke;
     width: 250px;
     padding: 15px;
     border-radius: 0.25cm;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    /* gap: 10px; */
     opacity: 85%;
     /* border: 2px solid green; */
 }
@@ -1795,17 +1800,17 @@ form {
 
 .footer_top_left-logo {
     display: flex;
-    /* flex-direction: column; */
-    justify-content: start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    width: 200px;
-    gap: 4px;
+    width: 80px;
+    /* gap: 4px; */
     /* border: 1px solid green; */
 }
 
 .footer_top_left-logo img {
-    width: 75px;
+    width: 80px;
     border-radius: 50px;
 }
 
@@ -1814,7 +1819,10 @@ form {
     font-weight: bold;
     text-transform: capitalize;
     font-family: "Anek Telugu", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
+    color: rgb(1, 197, 1);
+    margin-top: -6px;
+    word-spacing: 0.5px;
     /* border: 1px solid green; */
 }
 
@@ -2067,9 +2075,10 @@ form {
 
     .header_logotext {
         display: flex;
-        flex-direction: row;
-        justify-content: start;
-        width: 200px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 200px; */
         /* border: 1px solid green; */
     }
 
@@ -2279,14 +2288,6 @@ form {
         align-items: center;
         flex-direction: row;
         flex-wrap: nowrap;
-    }
-
-    .header_main-menu_ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 320px;
-        /* border: 2px solid red; */
     }
 
     .box01_right {

@@ -557,18 +557,20 @@ const hideButtons = document.querySelectorAll('.box10_left_content-button-hide')
 headers.forEach((header, index) => {
     header.addEventListener('click', () => {
         collapses.forEach((collapse, i) => {
-            collapse.style.display = i === index ? 'block' : 'none';
+            collapse.style.display = i === index ? (collapse.style.display === 'none' ? 'block' : 'none') : 'none';
         });
 
         showButtons.forEach((showButton, i) => {
-            showButton.style.display = i === index ? 'none' : 'block';
+            showButton.style.display = i === index ? (showButton.style.display === 'none' ? 'block' : 'none') : 'block';
         });
 
         hideButtons.forEach((hideButton, i) => {
-            hideButton.style.display = i === index ? 'block' : 'none';
+            hideButton.style.display = i === index ? (hideButton.style.display === 'none' ? 'block' : 'none') : 'none';
         });
     });
 });
+
+
 
 
 
@@ -592,6 +594,7 @@ pageNumberList.forEach((pageNumber, index) => {
         });
     });
 });
+
 
 
 

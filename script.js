@@ -549,210 +549,50 @@ moon.addEventListener('click', () => {
 
 
 
+const headers = document.querySelectorAll('.box10_left_content-header');
+const collapses = document.querySelectorAll('.box10_left_content-collapse');
+const showButtons = document.querySelectorAll('.box10_left_content-button-show');
+const hideButtons = document.querySelectorAll('.box10_left_content-button-hide');
 
+headers.forEach((header, index) => {
+    header.addEventListener('click', () => {
+        collapses.forEach((collapse, i) => {
+            collapse.style.display = i === index ? 'block' : 'none';
+        });
 
+        showButtons.forEach((showButton, i) => {
+            showButton.style.display = i === index ? 'none' : 'block';
+        });
 
-
-
-
-
-// Get references to the buttons and the plus/message elements
-const accordionHeader01 = document.querySelector('.box10_left_content-header01');
-const accordionHeader02 = document.querySelector('.box10_left_content-header02');
-const accordionHeader03 = document.querySelector('.box10_left_content-header03');
-const accordionHeader04 = document.querySelector('.box10_left_content-header04');
-const accordionHeader05 = document.querySelector('.box10_left_content-header05');
-const accordionHeader06 = document.querySelector('.box10_left_content-header06');
-
-const accordionButtonShow01 = document.querySelector('.box10_left_content-button-show01');
-const accordionButtonShow02 = document.querySelector('.box10_left_content-button-show02');
-const accordionButtonShow03 = document.querySelector('.box10_left_content-button-show03');
-const accordionButtonShow04 = document.querySelector('.box10_left_content-button-show04');
-const accordionButtonShow05 = document.querySelector('.box10_left_content-button-show05');
-const accordionButtonShow06 = document.querySelector('.box10_left_content-button-show06');
-
-const accordionButtonHide01 = document.querySelector('.box10_left_content-button-hide01');
-const accordionButtonHide02 = document.querySelector('.box10_left_content-button-hide02');
-const accordionButtonHide03 = document.querySelector('.box10_left_content-button-hide03');
-const accordionButtonHide04 = document.querySelector('.box10_left_content-button-hide04');
-const accordionButtonHide05 = document.querySelector('.box10_left_content-button-hide05');
-const accordionButtonHide06 = document.querySelector('.box10_left_content-button-hide06');
-
-const accordionCollapse01 = document.querySelector('.box10_left_content-collapse01');
-const accordionCollapse02 = document.querySelector('.box10_left_content-collapse02');
-const accordionCollapse03 = document.querySelector('.box10_left_content-collapse03');
-const accordionCollapse04 = document.querySelector('.box10_left_content-collapse04');
-const accordionCollapse05 = document.querySelector('.box10_left_content-collapse05');
-const accordionCollapse06 = document.querySelector('.box10_left_content-collapse06');
-
-
-
-
-accordionButtonShow01.style.display = 'none';
-accordionButtonShow02.style.display = 'block';
-accordionButtonShow03.style.display = 'block';
-accordionButtonShow04.style.display = 'block';
-accordionButtonShow05.style.display = 'block';
-accordionButtonShow06.style.display = 'block';
-
-accordionButtonHide01.style.display = 'block';
-accordionButtonHide02.style.display = 'none';
-accordionButtonHide03.style.display = 'none';
-accordionButtonHide04.style.display = 'none';
-accordionButtonHide05.style.display = 'none';
-accordionButtonHide06.style.display = 'none';
-
-accordionCollapse01.style.display = 'block';
-accordionCollapse02.style.display = 'none';
-accordionCollapse03.style.display = 'none';
-accordionCollapse04.style.display = 'none';
-accordionCollapse05.style.display = 'none';
-accordionCollapse06.style.display = 'none';
-
-
-// Add click event listeners to the buttons
-accordionHeader01.addEventListener('click', () => {
-    accordionButtonShow01.style.display = 'none';
-    accordionButtonShow02.style.display = 'block';
-    accordionButtonShow03.style.display = 'block';
-    accordionButtonShow04.style.display = 'block';
-    accordionButtonShow05.style.display = 'block';
-    accordionButtonShow06.style.display = 'block';
-
-    accordionButtonHide01.style.display = 'block';
-    accordionButtonHide02.style.display = 'none';
-    accordionButtonHide03.style.display = 'none';
-    accordionButtonHide04.style.display = 'none';
-    accordionButtonHide05.style.display = 'none';
-    accordionButtonHide06.style.display = 'none';
-
-    accordionCollapse01.style.display = 'block';
-    accordionCollapse02.style.display = 'none';
-    accordionCollapse03.style.display = 'none';
-    accordionCollapse04.style.display = 'none';
-    accordionCollapse05.style.display = 'none';
-    accordionCollapse06.style.display = 'none';
+        hideButtons.forEach((hideButton, i) => {
+            hideButton.style.display = i === index ? 'block' : 'none';
+        });
+    });
 });
 
 
-accordionHeader02.addEventListener('click', () => {
-    accordionButtonShow01.style.display = 'block';
-    accordionButtonShow02.style.display = 'none';
-    accordionButtonShow03.style.display = 'block';
-    accordionButtonShow04.style.display = 'block';
-    accordionButtonShow05.style.display = 'block';
-    accordionButtonShow06.style.display = 'block';
 
-    accordionButtonHide01.style.display = 'none';
-    accordionButtonHide02.style.display = 'block';
-    accordionButtonHide03.style.display = 'none';
-    accordionButtonHide04.style.display = 'none';
-    accordionButtonHide05.style.display = 'none';
-    accordionButtonHide06.style.display = 'none';
 
-    accordionCollapse01.style.display = 'none';
-    accordionCollapse02.style.display = 'block';
-    accordionCollapse03.style.display = 'none';
-    accordionCollapse04.style.display = 'none';
-    accordionCollapse05.style.display = 'none';
-    accordionCollapse06.style.display = 'none';
+const pageNumberList = document.querySelectorAll('.box10_left_page_number');
+const pageList = document.querySelectorAll('.box10_left_page_list');
+
+// Set background color of the first element in pageNumberList
+pageNumberList[0].style.backgroundColor = '#00D094';
+
+pageNumberList.forEach((pageNumber, index) => {
+    pageNumber.addEventListener('click', () => {
+        // Toggle display of pageList elements
+        pageList.forEach((pageListItem, i) => {
+            pageListItem.style.display = i === index ? 'block' : 'none';
+        });
+
+        // Change background color of pageNumber elements
+        pageNumberList.forEach((pageNumberItem, i) => {
+            pageNumberItem.style.backgroundColor = i === index ? '#00D094' : 'gray';
+        });
+    });
 });
 
-
-accordionHeader03.addEventListener('click', () => {
-    accordionButtonShow01.style.display = 'block';
-    accordionButtonShow02.style.display = 'block';
-    accordionButtonShow03.style.display = 'none';
-    accordionButtonShow04.style.display = 'block';
-    accordionButtonShow05.style.display = 'block';
-    accordionButtonShow06.style.display = 'block';
-
-    accordionButtonHide01.style.display = 'none';
-    accordionButtonHide02.style.display = 'none';
-    accordionButtonHide03.style.display = 'block';
-    accordionButtonHide04.style.display = 'none';
-    accordionButtonHide05.style.display = 'none';
-    accordionButtonHide06.style.display = 'none';
-
-    accordionCollapse01.style.display = 'none';
-    accordionCollapse02.style.display = 'none';
-    accordionCollapse03.style.display = 'block';
-    accordionCollapse04.style.display = 'none';
-    accordionCollapse05.style.display = 'none';
-    accordionCollapse06.style.display = 'none';
-});
-
-
-accordionHeader04.addEventListener('click', () => {
-    accordionButtonShow01.style.display = 'block';
-    accordionButtonShow02.style.display = 'block';
-    accordionButtonShow03.style.display = 'block';
-    accordionButtonShow04.style.display = 'none';
-    accordionButtonShow05.style.display = 'block';
-    accordionButtonShow06.style.display = 'block';
-
-    accordionButtonHide01.style.display = 'none';
-    accordionButtonHide02.style.display = 'none';
-    accordionButtonHide03.style.display = 'none';
-    accordionButtonHide04.style.display = 'block';
-    accordionButtonHide05.style.display = 'none';
-    accordionButtonHide06.style.display = 'none';
-
-    accordionCollapse01.style.display = 'none';
-    accordionCollapse02.style.display = 'none';
-    accordionCollapse03.style.display = 'none';
-    accordionCollapse04.style.display = 'block';
-    accordionCollapse05.style.display = 'none';
-    accordionCollapse06.style.display = 'none';
-});
-
-
-accordionHeader05.addEventListener('click', () => {
-    accordionButtonShow01.style.display = 'block';
-    accordionButtonShow02.style.display = 'block';
-    accordionButtonShow03.style.display = 'block';
-    accordionButtonShow04.style.display = 'block';
-    accordionButtonShow05.style.display = 'none';
-    accordionButtonShow06.style.display = 'block';
-
-    accordionButtonHide01.style.display = 'none';
-    accordionButtonHide02.style.display = 'none';
-    accordionButtonHide03.style.display = 'none';
-    accordionButtonHide04.style.display = 'none';
-    accordionButtonHide05.style.display = 'block';
-    accordionButtonHide06.style.display = 'none';
-
-    accordionCollapse01.style.display = 'none';
-    accordionCollapse02.style.display = 'none';
-    accordionCollapse03.style.display = 'none';
-    accordionCollapse04.style.display = 'none';
-    accordionCollapse05.style.display = 'block';
-    accordionCollapse06.style.display = 'none';
-});
-
-
-accordionHeader06.addEventListener('click', () => {
-    accordionButtonShow01.style.display = 'block';
-    accordionButtonShow02.style.display = 'block';
-    accordionButtonShow03.style.display = 'block';
-    accordionButtonShow04.style.display = 'block';
-    accordionButtonShow05.style.display = 'block';
-    accordionButtonShow06.style.display = 'none';
-
-    accordionButtonHide01.style.display = 'none';
-    accordionButtonHide02.style.display = 'none';
-    accordionButtonHide03.style.display = 'none';
-    accordionButtonHide04.style.display = 'none';
-    accordionButtonHide05.style.display = 'none';
-    accordionButtonHide06.style.display = 'block';
-
-    accordionCollapse01.style.display = 'none';
-    accordionCollapse02.style.display = 'none';
-    accordionCollapse03.style.display = 'none';
-    accordionCollapse04.style.display = 'none';
-    accordionCollapse05.style.display = 'none';
-    accordionCollapse06.style.display = 'block';
-});
 
 
 /******************************************************************** */

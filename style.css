@@ -1922,9 +1922,13 @@ form {
 .footer_top_right_content {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    width: 103px;
+    gap: 10px;
+    width: 95px;
     /* border: 2px solid greenyellow; */
+}
+
+.footer_top_right_content00 {
+    width: 140px;
 }
 
 .footer_top_right_content h5 {

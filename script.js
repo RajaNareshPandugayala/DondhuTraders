@@ -574,24 +574,67 @@ headers.forEach((header, index) => {
 
 
 
+// // pages: 1 2 3 .box10_left_page_number
+// const pageNumberList = document.querySelectorAll('.box10_left_page_number');
+// const pageList = document.querySelectorAll('.box10_left_page_list');
 
-const pageNumberList = document.querySelectorAll('.box10_left_page_number');
-const pageList = document.querySelectorAll('.box10_left_page_list');
+// // Set background color of the first element in pageNumberList
+// pageNumberList[0].style.backgroundColor = '#00D094';
 
-// Set background color of the first element in pageNumberList
-pageNumberList[0].style.backgroundColor = '#00D094';
+// pageNumberList.forEach((pageNumber, index) => {
+//     pageNumber.addEventListener('click', () => {
+//         // Toggle display of pageList elements
+//         pageList.forEach((pageListItem, i) => {
+//             pageListItem.style.display = i === index ? 'block' : 'none';
+//         });
 
-pageNumberList.forEach((pageNumber, index) => {
-    pageNumber.addEventListener('click', () => {
-        // Toggle display of pageList elements
-        pageList.forEach((pageListItem, i) => {
-            pageListItem.style.display = i === index ? 'block' : 'none';
+//         // Change background color of pageNumber elements
+//         pageNumberList.forEach((pageNumberItem, i) => {
+//             pageNumberItem.style.backgroundColor = i === index ? '#00D094' : 'gray';
+//         });
+//     });
+// });
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const divs = ["A_div03", "B_div03", "C_div03"];
+    let currentDivIndex = 0;
+
+    const updateDisplay = () => {
+        divs.forEach((divId, index) => {
+            const displayStyle = index === currentDivIndex ? "block" : "none";
+            document.getElementById(divId).style.display = displayStyle;
         });
+    };
 
-        // Change background color of pageNumber elements
-        pageNumberList.forEach((pageNumberItem, i) => {
-            pageNumberItem.style.backgroundColor = i === index ? '#00D094' : 'gray';
-        });
+    const leftArrowButtonA = document.getElementById("left_arrow_button03A");
+    const rightArrowButtonA = document.getElementById("right_arrow_button03A");
+    const leftArrowButtonB = document.getElementById("left_arrow_button03B");
+    const rightArrowButtonB = document.getElementById("right_arrow_button03B");
+
+
+    rightArrowButtonA.addEventListener("click", function () {
+        currentDivIndex = (currentDivIndex + 1) % divs.length;
+        updateDisplay();
+    });
+
+    rightArrowButtonB.addEventListener("click", function () {
+        currentDivIndex = (currentDivIndex + 1) % divs.length;
+        updateDisplay();
+    });
+
+    leftArrowButtonA.addEventListener("click", function () {
+        currentDivIndex = (currentDivIndex - 1 + divs.length) % divs.length;
+        updateDisplay();
+    });
+
+    leftArrowButtonB.addEventListener("click", function () {
+        currentDivIndex = (currentDivIndex - 1 + divs.length) % divs.length;
+        updateDisplay();
     });
 });
 

@@ -3142,10 +3142,14 @@ form {
 
     .floating-content__top-left {
         right: 50px;
+        width: 250px;
+        /* border: 1px solid red; */
     }
 
     .floating-content__bottom-right {
         left: 50px;
+        width: 250px;
+        /* border: 1px solid red; */
     }
 
     .box03_right_image img {
@@ -3331,11 +3335,11 @@ form {
 
 
     .floating-content__top-left {
-        right: 50px;
+        right: 40px;
     }
 
     .floating-content__bottom-right {
-        left: 50px;
+        left: 40px;
     }
 
 
@@ -3644,11 +3648,11 @@ form {
     }
 
     .floating-content__top-left {
-        right: 50px;
+        right: 40px;
     }
 
     .floating-content__bottom-right {
-        left: 50px;
+        left: 40px;
     }
 
 
@@ -3674,10 +3678,14 @@ form {
 
     .box05_down_box-left {
         margin-left: 0%;
+        padding: 10px 20px;
+        /* border: 2px solid red; */
     }
 
     .box05_down_box-right {
         margin-right: 0%;
+        padding: 10px 20px;
+        /* border: 2px solid red; */
     }
 
     .box04_heading_parent,
@@ -3834,6 +3842,11 @@ form {
     .footer_top_left,
     .box05_down_box {
         width: 100%;
+    }
+
+
+    .box11_boxs-content {
+        padding: 50px 30px;
     }
 
     .wp-image-238 {

@@ -567,6 +567,79 @@ p {
     justify-content: start;
 }
 
+.membersBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.membersBox_heading {
+    font-weight: bold;
+}
+
+.membersBox_Video_Parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    overflow: hidden;
+    /* border: 1px solid #00D094; */
+}
+
+
+.membersBox_Video_Player {
+    width: 182.5px;
+    height: 323px;
+    border-radius: 0.25cm;
+}
+
+.membersBox_Video_add_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    /* border: 1px solid #00D094; */
+    background: linear-gradient(to right, #EDF2F8, transparent);
+    width: 182.5px;
+    height: 323px;
+    border-radius: 0.25cm;
+    cursor: pointer;
+}
+
+.membersBox_Video_add-button-icon,
+.membersBox_Video_add-button-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.membersBox_Video_add-button-icon {
+    background-color: #00D094;
+    font-size: 24px;
+    padding: 10px 13px 7px 13px;
+    border-radius: 50%;
+}
+
+
+.video-container {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    /* Add some spacing between videos */
+}
+
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 1;
+}
 
 /***********************************box01_AboutUsAndContactUs_Css-End**********************************/
 

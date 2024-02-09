@@ -133,6 +133,124 @@
                 </div>
             </div>
         </div>
+
+        <div class="box membersBox">
+            <div class="box_heading membersBox_heading">Hear From <span>Our Members</span></div>
+            <div class="box_boxs-content membersBox_Video_Parent">
+                <video id="membersBox_Video_Player" class="membersBox_Video_Player hidden" controls>
+                    <source src="#" type="video/mp4">
+                </video>
+
+                <div class="membersBox_Video_add_button" onclick="addVideo()">
+                    <div class="membersBox_Video_add-button-icon">
+                        +
+                    </div>
+                    <div class="membersBox_Video_add-button-text">
+                        Add Member(s)
+                    </div>
+                </div>
+            </div>
+            <div class="box_down_box_viewmore" style="margin-top: 20px;" onclick="toggleViewMore()">
+                <a href="#" target="_self" rel="nofollow">View more </a>
+            </div>
+
+            <script>
+
+                function addVideo() {
+                    // Create input element of type file
+                    let input = document.createElement('input');
+                    input.setAttribute('type', 'file');
+                    input.setAttribute('accept', 'video/*'); // Allow only video files
+
+                    // Add change event listener to handle file selection
+                    input.addEventListener('change', function (event) {
+                        let file = event.target.files[0];
+                        if (file) {
+                            // Create URL for the selected video file
+                            let videoURL = URL.createObjectURL(file);
+
+                            // Create video container
+                            let videoContainer = document.createElement('div');
+                            videoContainer.setAttribute('class', 'video-container');
+
+                            // Create video element
+                            let video = document.createElement('video');
+                            video.setAttribute('class', 'membersBox_Video_Player');
+                            video.setAttribute('controls', '');
+
+                            // Create source element for the video
+                            let source = document.createElement('source');
+                            source.setAttribute('src', videoURL);
+                            source.setAttribute('type', 'video/mp4');
+
+                            // Append source to the video element
+                            video.appendChild(source);
+
+                            // Create delete button for the video
+                            let deleteButton = document.createElement('button');
+                            deleteButton.textContent = '🗑️';
+                            deleteButton.setAttribute('class', 'delete-button');
+                            deleteButton.addEventListener('click', function () {
+                                // Remove the video element when delete button is clicked
+                                videoContainer.remove();
+                            });
+
+                            // Append video and delete button to the container
+                            videoContainer.appendChild(deleteButton);
+                            videoContainer.appendChild(video);
+
+                            // Get the parent element
+                            let parent = document.querySelector('.membersBox_Video_Parent');
+
+                            // Insert video container
+                            parent.insertBefore(videoContainer, parent.firstChild);
+
+                            // Check if videos exceed one row
+                            let videos = parent.querySelectorAll('.membersBox_Video_Player');
+                            let deleteButtons = parent.querySelectorAll('.delete-button');
+                            let videoContainers = parent.querySelectorAll('.video-container');
+                            let numColumns = Math.floor(parent.offsetWidth / (182.5 + 30)); // Width of video + gap
+                            if (videos.length > numColumns) {
+                                // Hide excess videos in the first row
+                                for (let i = numColumns; i < videos.length; i++) {
+                                    videos[i].style.display = 'none';
+                                    deleteButtons[i].style.display = 'none';
+                                    videoContainers[i].style.display = 'none';
+                                }
+                            }
+                        }
+                    });
+
+                    // Trigger the file input click event
+                    input.click();
+                }
+
+
+                function toggleViewMore() {
+                    let parent = document.querySelector('.membersBox_Video_Parent');
+                    let videos = parent.querySelectorAll('.membersBox_Video_Player');
+                    let deleteButtons = parent.querySelectorAll('.delete-button');
+                    let videoContainers = parent.querySelectorAll('.video-container');
+                    let numVideos = videos.length;
+                    let numColumns = Math.floor(parent.offsetWidth / (182.5 + 30)); // Width of iframe + gap
+
+                    // Toggle visibility of videos beyond one row
+                    for (let i = numColumns; i < numVideos; i++) {
+                        if (videos[i].style.display === 'none') {
+                            videos[i].style.display = '';
+                            deleteButtons[i].style.display = '';
+                            videoContainers[i].style.display = '';
+                        } else {
+                            videos[i].style.display = 'none';
+                            deleteButtons[i].style.display = 'none';
+                            videoContainers[i].style.display = 'none';
+                        }
+                    }
+                }
+            </script>
+        </div>
+
+
         <div class="box box02">
             <div class="box_boxs-content box02_boxs-content">
                 <div class="box02_left hidden-image-left">

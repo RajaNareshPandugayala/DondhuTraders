@@ -421,6 +421,7 @@ const headerMainMenuUlLi01A = document.querySelectorAll('.header_main-menu_ul-li
 const box05Middle = document.querySelectorAll('.box05_middle');
 const boxContent = document.getElementsByClassName('box_content');
 const para = document.getElementsByClassName('para');
+const membersBoxVideoAdd = document.getElementsByClassName('membersBox_Video_add_button');
 
 
 
@@ -476,6 +477,10 @@ moon.addEventListener('click', () => {
         box05DownBoxRight[i].style.background = theme === 'light' ? 'linear-gradient(to right, #001515, transparent)' : 'linear-gradient(to right, #EDF3F8, transparent)';
     }
 
+    for (let i = 0; i < membersBoxVideoAdd.length; i++) {
+        membersBoxVideoAdd[i].style.background = theme === 'light' ? 'linear-gradient(to right, #001515, transparent)' : 'linear-gradient(to right, #EDF3F8, transparent)';
+    }
+
 
 
     for (let i = 0; i < floatingContentTopLeft.length; i++) {
@@ -491,7 +496,7 @@ moon.addEventListener('click', () => {
     }
 
     for (let i = 0; i < box03RightImageBottomContent.length; i++) {
-        box03RightImageBottomContent[i].style.backgroundColor = theme === 'light' ? '#001515' : 'white';
+        box03RightImageBottomContent[i].style.backgroundColor = theme === 'light' ? '#001515' : '#EDF2F8';
     }
 
     for (let i = 0; i < box06DownBox.length; i++) {
